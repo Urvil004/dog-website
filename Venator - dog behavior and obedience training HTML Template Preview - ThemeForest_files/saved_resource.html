@@ -1,0 +1,2721 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://html.modernwebtemplates.com/venator/ -->
+<html class="js no-cookies svg localstorage audio video rgba csscalc cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox no-cssgridlegacy cssgrid"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Venator</title>
+	
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<link rel="stylesheet" href="./animations.css">
+	<link rel="stylesheet" href="./font-awesome.css">
+	<link rel="stylesheet" href="./main.css" class="color-switcher-link">
+	<script src="./modernizr-custom.js.download"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+<style id="eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-style">
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-modal {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  z-index: 90000;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* The Modal (background) */
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-modal-2 {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 5%; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Help Icon Styles */
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-bsr-help-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin: 5px;
+  line-height: 1.2;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(130, 87, 254);
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-circle-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin: 5px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-show {
+  display: block;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-hide {
+  display: none;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  line-height: 1.2;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-close-icon:hover {
+  background-color: #e32b2b;
+  color: white;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-kdplogoword {
+  color: rgb(130, 87, 254);
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-bsr-td {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-align: start;
+  color: #000;
+  border: 2px solid #E0D6FF;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-main-table {
+  height: 170px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-box-wrapper {
+  background: white;
+  color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    border-radius: 10px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-top-box {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid rgb(130, 87, 254);
+  border-bottom: 1px solid rgb(130, 87, 254);
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: start;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-bottom-box {
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid rgb(130, 87, 254);
+  border-top: 1px solid rgb(130, 87, 254);
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: start;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-inner-box {
+  display: flex;
+  border: 2px solid rgb(130, 87, 254);
+  border-bottom: 1px solid rgb(130, 87, 254);
+  border-top: 1px solid rgb(130, 87, 254);
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: start;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-left-box {
+  width: 80px;
+  border-right: 2px solid rgb(130, 87, 254);
+  margin: 0px 6px 0px 6px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card {
+  perspective: 600px;
+  position: relative;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-is-switched .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__wrapper {
+  animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rotate 0.5s linear both;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__wrapper {
+  transform-style: preserve-3d;
+  animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rotate-inverse 0.5s linear both;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__side {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__side.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-is-active {
+  position: static;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__side--back {
+  transform: rotateY(180deg);
+}
+@keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  70% {
+    transform: rotateY(200deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rotate-inverse {
+  0% {
+    transform: rotateY(180deg);
+  }
+  70% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card {
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__side {
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-card__side--back {
+}
+
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tooltip .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tooltiptext {
+  visibility: hidden;
+  min-width: max-content;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tooltip:hover .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tooltiptext {
+  visibility: visible;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-text-btn {
+  border: none;
+  background-color: inherit;
+  margin: 0 8px;
+  padding: 0;
+  font-size: 16px;
+  font-wight: 600;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-text-btn:hover {
+  background-image: linear-gradient( 270.09deg, #6b49fc -13.64%, #de85ff 86.14%, #e26ff1 106.56% );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-text-btn.active {
+  background-image: linear-gradient( 270.09deg, #6b49fc -13.64%, #de85ff 86.14%, #e26ff1 106.56% );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+
+
+/* Safari */
+@-webkit-keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-loader {
+            border: 16px solid #f3f3f3;
+            /* Light grey */
+            border-top: 16px solid #6b49fc;
+            /* Dark Green */
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spinloader 2s linear infinite;
+        }
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-loader img {
+            padding: 40px;
+            animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spinlogo 2s linear infinite;
+            width: 200px;
+            height: 168px;
+        }
+
+        @keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spinloader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spinlogo {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-gradient-btn {
+    background-image: linear-gradient( 270.09deg, #6b49fc -13.64%, #de85ff 86.14%, #e26ff1 106.56% );
+    color: white;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-wight: 600;
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-gradient-btn:hover {
+    background-position: right center;
+  }
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-deep-view-modal-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-deep-view-modal-nav-bar-search input {
+    width: 20rem;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-deep-view-modal-nav-bar-search input:focus {
+    outline: none;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rounded-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rounded-btn:hover {
+    background-color: #ccc;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-rounded-btn:active {
+    background-color: #aaa;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-deep-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-icon-text {
+      color: rgb(130, 87, 254);
+  }
+
+  #eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-scrollable-list {
+    max-height: 50vh;
+    min-height: 50vh;
+    overflow: auto;
+}
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-deep-view-modal-nav-bar-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tablinks {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tablinks:hover {
+    background-color: #ddd;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-tablinks.active {
+    background-color: #ccc;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-productCard{
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-family: "Nunito Sans", "--apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid rgb(217, 224, 232);
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+    display: block;
+    grid-template-columns: 207px 200px;
+    gap: 8px;
+    direction: ltr;
+    display: flex!important;
+    flex-direction: column!important;
+    text-align: start;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-cardAsinDiv{
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(19, 25, 31);
+    display: flex;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-categoryDiv{
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 30px;
+    /*color: rgb(43, 57, 72);*/
+    white-space: nowrap;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 129, 255) !important;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-restCardDataDiv{
+    display: flex;
+    flex-flow: wrap;
+    gap: 8px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-sales{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 4px;
+    /*flex-direction: column;*/
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-skeleton{
+    display: block;
+    height: 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #eef1f4 0%, #f7f8fa 40%, #e4e8ee 80%);
+    background-size: 200% 100%;
+    animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-shimmer 1.2s ease-in-out infinite;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-skeleton-value{
+    display: inline-block;
+    width: 52px;
+    height: 12px;
+    vertical-align: middle;
+    border-radius: 999px;
+}
+@keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-salesVale{
+    flex-direction: column;
+}
+ .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-details-popup-card {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    background: white;
+    width: fit-content;
+    height: fit-content;
+    top: 40px;
+    right: 20px;
+    padding: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+ }
+
+ .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-action-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-white-btn {
+    background-color: #fff !important;
+    color: #047cfe !important;
+    border: 1px solid #dde0e3;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-white-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-purple-btn {
+    background-color: rgb(130, 87, 254);
+    color: white !important;
+    padding: 8px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-purple-btn:hover {
+    background-color: rgb(101 48 254);
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-purple-btn:active {
+    background-color: rgb(101 48 254);
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-mui-purple-btn:disabled {
+    background-color: rgb(186 166 243);
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-prod-list-items {
+        font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(43, 57, 72);
+    white-space: nowrap;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-list-items-a {
+    color: #047cfe !important;
+    margin-right: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-icon {
+    display: flex;
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+    z-index: 999;
+    color: #212121;
+    background: white;
+    box-shadow: rgba(103, 132, 162, 0.08) 0px 2px 3px, rgba(103, 132, 162, 0.16) 0px 1px 8px;
+    border-radius: 6px 0px 0px 6px;
+    cursor: pointer;
+}
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-item {
+        display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121 !important;
+    fill: #212121;
+    gap: 8px;
+    border-radius: 6px;
+    background-color: rgb(242, 245, 247);
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-item svg {
+    width: 24px;
+    height: 24px;
+    fill: #212121;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-item path {
+    fill: #212121;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-item a {
+    color: #212121 !important;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-floating-menu-item:hover {
+    background-color: rgb(230, 236, 240);
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+  margin: 16px 0px 16px 16px;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-purple-btn {
+      display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: '__Roboto_42e952','__Roboto_Fallback_42e952';
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #fff;
+    background-color: #7449fb;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    width: 100%;
+    text-transform: none;
+    border-radius: 16px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  font-size: 16px;
+  color: #cdcdcd;
+  font-weight: normal;
+  padding: 2px 5px;
+  z-index: 5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group input {
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: 1px solid #d9d9d9;
+  padding: 10px 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group input#password {
+  padding-right: 44px;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #6b6b6b;
+  cursor: pointer;
+  line-height: 0;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle:hover,
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle:focus {
+  color: #7449fb;
+  outline: none;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle .eye-off {
+  display: none;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle.is-visible .eye-on {
+  display: none;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-password-toggle.is-visible .eye-off {
+  display: block;
+}
+
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group.focused label {
+  background: #fff;
+  font-size: 12px;
+  top: -8px;
+  left: 5px;
+  color: #7449fb;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-input-group span.validate-tooltip {
+  margin-top: 0;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-wrapper {
+  width: 400px;
+  background: #fff;
+  margin: 20px auto;
+  min-height: 200px;
+  border: 1px solid #f3f3f3;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-wrapper .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-inner-warpper {
+  padding: 50px 30px 60px;
+  box-shadow: 1px 1.732px 10px 0px rgba(0, 0, 0, 0.063);
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-wrapper .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-title {
+  margin-top: 0;
+}
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-wrapper .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-supporter {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8E8E8E;
+  cursor: pointer;
+}
+
+.wrongpass {
+  display: none;
+  color: rgb(215, 71, 71);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 33px;
+  margin: 0%;
+}
+
+.eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-loader-s {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-loader {
+  display: none;
+}
+ .pricing-table td {
+  padding: 8px;
+ }
+ .pricing-table th {
+  padding: 8px !important;
+ }
+ .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-svg-inline {
+    height: 1em;
+  }
+
+  .price-popup {
+    cursor: pointer;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-white-rounded-box {
+    background: white;
+    color: black;
+    padding: 8px;
+    border-radius: 16px;
+    border: 2px solid rgb(130, 87, 254);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-underline-text-hover:hover {
+    text-decoration: underline;
+  }
+
+  .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-summary-card {
+            background: #fff;
+            border: 2px solid #e0d6ff;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(196, 193, 246, 0.2);
+            padding: 16px;
+            min-width: 220px;
+            max-width: 320px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-summary-card-header {
+            font-size: 18px;
+            font-weight: 600;
+            color: #222;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-summary-card-content {
+            font-size: 24px;
+            font-weight: 700;
+            color: #222;
+            text-align: center;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-summary-rounded-btn {
+            border-radius: 24px;
+            padding: 8px 24px;
+            background-color: #ffffff;
+            text-decoration: none;
+            color: #047cfe !important;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            display: block;
+            border: 1px solid #e0d6ff;
+            box-shadow: 0 4px 16px 0 rgba(123, 97, 255, 0.07);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .eefljgmhgaidffapnppcmmafobefjece-e6d3dd29-e240-4ec9-9a7a-f78d1fd5a8f9-product-summary {
+            display: block;
+            background: radial-gradient(circle at 50% 50%, #F2F4FC, #DAD9FF);
+            padding: 16px;
+            border-radius: 24px;
+        }
+
+
+
+</style><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="885e7f0e-6434-4e0c-b130-c958aa05ca58" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"></script></head>
+
+<body __processed_47181f95-5b63-4736-ad09-918cfadcf8db__="true" data-titans-quick-view-extension-id="eefljgmhgaidffapnppcmmafobefjece" bis_status="ok" bis_frame_id="145">
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">×</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="https://html.modernwebtemplates.com/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_toplogo ls s-pt-45 s-pb-40 d-none d-lg-block">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<div class="">
+								<a href="https://html.modernwebtemplates.com/venator/" class="logo">
+									<img src="./logo.png" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="d-flex justify-content-center">
+								<div class="media header-media">
+									<div class="media-body">
+										<h4>
+											mail us
+										</h4>
+										<p>
+											<a href="mailto:canis@support.com">canis@support.com</a>
+										</p>
+									</div>
+								</div>
+
+								<div class="media header-media">
+									<div class="media-body">
+										<h4>
+											working ours
+										</h4>
+										<p>
+											9.00 - 20.00
+										</p>
+									</div>
+								</div>
+
+								<div class="media header-media">
+									<div class="media-body">
+										<h4>
+											call us
+										</h4>
+										<p>
+											<a href="tel:0-800-321-654">0-800-321-654</a>
+										</p>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="col-lg-3 text-right">
+							<a href="https://html.modernwebtemplates.com/venator/#" class="btn btn-maincolor">book training</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!--eof topline-->
+			<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+			<div class="page_header_wrapper ls affix-top-wrapper" style="height: 83px;"><header class="page_header ls bg-maincolor4 main-style affix-top">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-xl-12">
+							<div class="nav-wrap header-main">
+								<a href="https://html.modernwebtemplates.com/venator/" class="logo logo-ds">
+									<img src="./logo_ds.png" alt="img">
+								</a>
+								<!-- main nav start -->
+								<nav class="top-nav" style="">
+									<ul class="nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+
+
+										<li class="active">
+											<a href="https://html.modernwebtemplates.com/venator/index.html" class="sf-with-ul">Home</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/index.html">MultiPage</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/index_static.html">Static Intro</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/index_singlepage.html">Single Page</a>
+												</li>
+											</ul>
+										</li>
+										<li class="">
+											<a href="https://html.modernwebtemplates.com/venator/about.html" class="sf-with-ul">Pages</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/about.html">About</a>
+												</li>
+
+												<!-- features -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/shortcodes_iconbox.html" class="sf-with-ul">Shortcodes</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_typography.html">Typography</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_buttons.html">Buttons</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_pricing.html">Pricing</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_iconbox.html">Icon Boxes</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_progress.html">Progress</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_tabs.html">Tabs &amp; Collapse</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_bootstrap.html">Bootstrap Elements</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_animation.html">Animation</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_icons.html">Template Icons</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_socialicons.html">Social Icons</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof shortcodes -->
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/shortcodes_widgets_default.html" class="sf-with-ul">Widgets</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_widgets_default.html">Default Widgets</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_widgets_shop.html">Shop Widgets</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shortcodes_widgets_custom.html">Custom Widgets</a>
+														</li>
+													</ul>
+
+												</li>
+
+												<!-- shop -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/shop-right.html" class="sf-with-ul">Shop</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-account-dashboard.html" class="sf-with-ul">Account</a><span class="sf-menu-item-mobile-toggler"></span>
+															<ul style="display: none; margin-top: 5px;">
+
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-details.html">Account details</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-addresses.html">Addresses</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-address-edit.html">Edit Address</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-orders.html">Orders</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-order-single.html">Single Order</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-downloads.html">Downloads</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-password-reset.html">Password Reset</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/shop-account-login.html">Login/Logout</a>
+																</li>
+
+															</ul>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-product-right.html">Product Right Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-product-left.html">Product Left Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-cart.html">Cart</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-checkout.html">Checkout</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/shop-order-received.html">Order Received</a>
+														</li>
+
+													</ul>
+												</li>
+												<!-- eof shop -->
+
+												<!-- events -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/events-left.html" class="sf-with-ul">Events</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/events-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/events-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/events-full.html">Full Width</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/event-single-left.html" class="sf-with-ul">Single Event</a><span class="sf-menu-item-mobile-toggler"></span>
+															<ul style="display: none; margin-top: 5px;">
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/event-single-left.html">Left Sidebar</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/event-single-right.html">Right Sidebar</a>
+																</li>
+																<li>
+																	<a href="https://html.modernwebtemplates.com/venator/event-single-full.html">Full Width</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<!-- eof events -->
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/team.html" class="sf-with-ul">Team</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/team.html">Team</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/team-single.html">Team Member</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/comingsoon.html">Comingsoon</a>
+												</li>
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/faq.html" class="sf-with-ul">FAQ</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/faq.html">FAQ</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/faq2.html">FAQ 2</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/404.html">404</a>
+												</li>
+
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li class="">
+											<a href="https://html.modernwebtemplates.com/venator/services.html" class="sf-with-ul">Programs</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/services.html">Programs 1</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/services2.html">Programs 2</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/service-single.html">Single Program</a>
+												</li>
+											</ul>
+										</li>
+										<!-- eof services -->
+										<li>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="sf-with-ul">Features</a><span class="sf-menu-item-mobile-toggler"></span>
+											<div class="mega-menu" style="display: none; margin-top: 5px; left: -292.812px;">
+												<ul class="mega-menu-row">
+													<li class="mega-menu-col">
+														<a href="https://html.modernwebtemplates.com/venator/#">Headers</a>
+														<ul>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header1.html">Header Type 1</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header2.html">Header Type 2</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header3.html">Header Type 3</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header4.html">Header Type 4</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header5.html">Header Type 5</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header6.html">Header Type 6</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="https://html.modernwebtemplates.com/venator/#">Side Menus</a>
+														<ul>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side.html">Push Left</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side-right.html">Push Right</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side-slide.html">Slide Left</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side-slide-right.html">Slide Right</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side-sticked.html">Sticked Left</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/header-side-sticked-right.html">Sticked Right</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="https://html.modernwebtemplates.com/venator/title1.html">Title Sections</a>
+														<ul>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title1.html">Title section 1</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title2.html">Title section 2</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title3.html">Title section 3</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title4.html">Title section 4</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title5.html">Title section 5</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/title6.html">Title section 6</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="https://html.modernwebtemplates.com/venator/footer1.html#footer">Footers</a>
+														<ul>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer1.html#footer">Footer Type 1</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer2.html#footer">Footer Type 2</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer3.html#footer">Footer Type 3</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer4.html#footer">Footer Type 4</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer5.html#footer">Footer Type 5</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/footer6.html#footer">Footer Type 6</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="https://html.modernwebtemplates.com/venator/copyright1.html#copyright">Copyright</a>
+
+														<ul>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright1.html#copyright">Copyright 1</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright2.html#copyright">Copyright 2</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright3.html#copyright">Copyright 3</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright4.html#copyright">Copyright 4</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright5.html#copyright">Copyright 5</a>
+															</li>
+															<li>
+																<a href="https://html.modernwebtemplates.com/venator/copyright6.html#copyright">Copyright 6</a>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</div> <!-- eof mega menu -->
+										</li>
+										<!-- eof features -->
+										<!-- gallery -->
+										<li>
+											<a href="https://html.modernwebtemplates.com/venator/gallery-image.html" class="sf-with-ul">Gallery</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+												<!-- Gallery image only -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/gallery-image.html" class="sf-with-ul">Regular</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-image-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-image.html">3 columns</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
+														</li>
+
+													</ul>
+												</li>
+												<!-- eof Gallery image only -->
+
+												<!-- Gallery with title -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/gallery-title.html" class="sf-with-ul">Image With Title</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-title-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-title.html">3 column</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery with title -->
+
+												<!-- Gallery with excerpt -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/gallery-excerpt.html" class="sf-with-ul">Extended</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-excerpt-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-excerpt.html">3 column</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery with excerpt -->
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/gallery-tiled.html">Tiled Gallery</a>
+												</li>
+
+												<!-- Gallery item -->
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/gallery-single.html" class="sf-with-ul">Gallery Item</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-single.html">Style 1</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/gallery-single2.html">Style 2</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery item -->
+											</ul>
+										</li>
+										<!-- eof Gallery -->
+										<!-- contacts -->
+										<li>
+											<a href="https://html.modernwebtemplates.com/venator/contact.html" class="sf-with-ul">Contacts</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/contact.html">Contact 1</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/contact2.html">Contact 2</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/contact3.html">Contact 3</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/contact4.html">Contact 4</a>
+												</li>
+											</ul>
+										</li>
+										<!-- eof contacts -->
+										<!-- blog -->
+										<li>
+											<a href="https://html.modernwebtemplates.com/venator/blog-left.html" class="sf-with-ul">Blog</a><span class="sf-menu-item-mobile-toggler"></span>
+											<ul style="display: none; margin-top: 5px;">
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-right.html">Right Sidebar</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-left.html">Left Sidebar</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-full.html">No Sidebar</a>
+												</li>
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-grid.html">News Grid</a>
+												</li>
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-single-right.html" class="sf-with-ul">Post</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">No Sidebar</a>
+														</li>
+													</ul>
+												</li>
+
+												<li>
+													<a href="https://html.modernwebtemplates.com/venator/blog-single-video-right.html" class="sf-with-ul">Video Post</a><span class="sf-menu-item-mobile-toggler"></span>
+													<ul style="display: none; margin-top: 5px;">
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-video-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-video-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="https://html.modernwebtemplates.com/venator/blog-single-video-full.html">No Sidebar</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</li>
+										<!-- eof blog -->
+									</ul>
+
+
+								</nav>
+								<!-- eof main nav -->
+								<span class="mr-5">
+									<a href="https://html.modernwebtemplates.com/venator/#" class="search_modal_button hidden-below-xl">
+										<i class="fa fa-search"></i>
+									</a>
+								</span>
+								<ul class="top-includes d-none d-xl-block">
+									<li>
+										<span class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter border-icon rounded-icon color-icon" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google border-icon rounded-icon color-icon" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook border-icon rounded-icon color-icon" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-linkedin border-icon rounded-icon color-icon" title="linkedin"></a>
+
+										</span>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- header toggler -->
+				<span class="toggle_menu"><span></span></span>
+			</header></div>
+			<section class="page_slider home_slider">
+				<div class="flexslider vertical">
+					<ul class="slides">
+						<li class="ds s-overlay cover-image text-center flex-active-slide" style="background-image: url(&quot;images/slide01.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" data-thumb-alt="">
+							<img src="./slide01.jpg" alt="img" draggable="false">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper intro_text_bottom">
+											<div class="intro_layers">
+												<div class="intro-layer animated fadeInRight" style="visibility: hidden;">
+													<h3>Trusted by Thousands of</h3>
+												</div>
+												<div class="intro-layer animated fadeInRight" style="visibility: hidden;">
+													<h2>
+														Dogs &amp; Their Owners
+													</h2>
+												</div>
+												<div class="intro-layer hidden-below-sm mt-22 animated fadeInRight" style="visibility: hidden;">
+													<p>
+														I truly believe every single one of us raising dogs today share an incredible
+														responsibility in determining how our dogs will view their world.
+													</p>
+												</div>
+												<div class="divider-xl-55 animated fadeInRight" style="visibility: hidden;"></div>
+												<div class="divider-30 hidden-xl animated fadeInRight" style="visibility: hidden;"></div>
+												<div class="intro-layer buttons-layer d-flex flex-wrap animated fadeInRight" style="visibility: hidden;">
+													<a href="https://html.modernwebtemplates.com/venator/contact.html" class="btn btn-maincolor">book training</a>
+													<a href="https://html.modernwebtemplates.com/venator/about.html" class="btn btn-outline-maincolor">more details</a>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container-fluid -->
+						</li>
+						<li class="ds s-overlay cover-image text-center" style="background-image: url(&quot;images/slide02.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" data-thumb-alt="">
+							<img src="./slide02.jpg" alt="img" draggable="false">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper intro_text_bottom">
+											<div class="intro_layers">
+												<div class="intro-layer" style="visibility: hidden;">
+													<h3>Recomended By</h3>
+												</div>
+												<div class="intro-layer" style="visibility: hidden;">
+													<h2>
+														Veterinarians and Shelters
+													</h2>
+												</div>
+												<div class="intro-layer hidden-below-sm mt-22" style="visibility: hidden;">
+													<p>
+														We are recommended by veterinarians, animal shelters, breeders, rescues and by both of the nation's top dog training associations.
+													</p>
+												</div>
+												<div class="divider-xl-55" style="visibility: hidden;"></div>
+												<div class="divider-30 hidden-xl" style="visibility: hidden;"></div>
+												<div class="intro-layer buttons-layer d-flex flex-wrap" style="visibility: hidden;">
+													<a href="https://html.modernwebtemplates.com/venator/contact.html" class="btn btn-maincolor">book training</a>
+													<a href="https://html.modernwebtemplates.com/venator/about.html" class="btn btn-outline-maincolor">more details</a>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container-fluid -->
+						</li>
+						<li class="ds s-overlay cover-image text-center" style="background-image: url(&quot;images/slide03.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" data-thumb-alt="">
+							<img src="./slide03.jpg" alt="img" draggable="false">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper intro_text_bottom">
+											<div class="intro_layers">
+												<div class="intro-layer" style="visibility: hidden;">
+													<h3>Professional</h3>
+												</div>
+												<div class="intro-layer" style="visibility: hidden;">
+													<h2>
+														Dog Training
+													</h2>
+												</div>
+												<div class="intro-layer hidden-below-sm mt-22" style="visibility: hidden;">
+													<p>
+														Before you can choose an actual dog trainer, I believe you must first decide what
+														kind of bond you want to establish with your dog.
+													</p>
+												</div>
+												<div class="divider-xl-55" style="visibility: hidden;"></div>
+												<div class="divider-30 hidden-xl" style="visibility: hidden;"></div>
+												<div class="intro-layer buttons-layer d-flex flex-wrap" style="visibility: hidden;">
+													<a href="https://html.modernwebtemplates.com/venator/contact.html" class="btn btn-maincolor">book training</a>
+													<a href="https://html.modernwebtemplates.com/venator/about.html" class="btn btn-outline-maincolor">more details</a>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container-fluid -->
+						</li>
+					</ul>
+				<ol class="flex-control-nav flex-control-paging"><li><a href="https://html.modernwebtemplates.com/venator/#" class="flex-active">1</a></li><li><a href="https://html.modernwebtemplates.com/venator/#">2</a></li><li><a href="https://html.modernwebtemplates.com/venator/#">3</a></li></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="https://html.modernwebtemplates.com/venator/#"></a></li><li class="flex-nav-next"><a class="flex-next" href="https://html.modernwebtemplates.com/venator/#"></a></li></ul></div> <!-- eof flexslider -->
+			</section>
+
+			<section id="offer" class="section-offers ls s-py-60 s-py-md-90 s-py-xl-160">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-8 offset-xl-2 text-center mt--5">
+							<p class="top-subtitle">Welcome!</p>
+							<h3 class="special-heading">What We Offer</h3>
+							<img src="./dog.png" alt="dog">
+							<p>
+								You’ll enjoy knowing our dedicated team will do whatever is needed to keep your pets happy, healthy and safe when you’re away from home.
+							</p>
+							<div class="mt-100 hidden-below-xl"></div>
+							<div class="mt-55 hidden-above-xl"></div>
+						</div>
+						<div class="row c-gutter-40">
+							<div class="col-xl-4 col-md-6 left">
+								<div class="media icon-special text-xl-right">
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Group Training</a>
+										</h5>
+										<p>
+											Canis certified dog trainers
+											specialize in behavior.
+										</p>
+									</div>
+									<div class="icon-styled">
+										<img src="./04.png" alt="img">
+									</div>
+								</div>
+								<div class="mt-55 hidden-below-lg"></div>
+								<div class="mt-40 hidden-above-lg"></div>
+								<div class="media icon-special mr-xl-4 text-xl-right">
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Private Training</a>
+										</h5>
+										<p>
+											We are recommended by
+											veterinarians and animal
+										</p>
+									</div>
+									<div class="icon-styled">
+										<img src="./05.png" alt="img">
+									</div>
+								</div>
+								<div class="mt-55 hidden-below-lg"></div>
+								<div class="mt-40 hidden-above-lg"></div>
+								<div class="media icon-special text-xl-right">
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Virtual Training</a>
+										</h5>
+										<p>
+											We train puppies 8 weeks and older, and adult dogs of any age.
+										</p>
+									</div>
+									<div class="icon-styled">
+										<img src="./06.png" alt="img">
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 hidden-below-xl"></div>
+							<div class="col-xl-4 col-md-6 mt-40 mt-md-0">
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./01.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Puppy Training</a>
+										</h5>
+										<p>
+											Private lessons begin with a hands-on evaluation of puppy.
+										</p>
+									</div>
+								</div>
+								<div class="mt-55 hidden-below-lg"></div>
+								<div class="mt-40 hidden-above-lg"></div>
+								<div class="media icon-special ml-xl-4">
+									<div class="icon-styled">
+										<img src="./02.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Specialty Program</a>
+										</h5>
+										<p>
+											Canis has excellent training that can help rehabilitate dogs.
+										</p>
+									</div>
+								</div>
+								<div class="mt-55 hidden-below-lg"></div>
+								<div class="mt-40 hidden-above-lg"></div>
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./03.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5 class="links-darkgrey">
+											<a href="https://html.modernwebtemplates.com/venator/service-single.html">Security Program</a>
+										</h5>
+										<p>
+											We use modern management, and classical counter techniques.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-80 hidden-below-xl"></div>
+				</div>
+			</section>
+
+			<section id="progress" class="section-progress ds s-overlay s-parallax s-py-45 s-py-md-75 s-py-xl-100">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+							<div class="icon-box text-center">
+								<h3 class="text-uppercase counter-wrap color-main4">
+									<span class="counter" data-from="0" data-to="426" data-speed="1500">0</span>
+								</h3>
+								<p class="small-text">Happy Clients</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="icon-box text-center">
+								<h3 class="text-uppercase counter-wrap color-main4">
+									<span class="counter" data-from="0" data-to="512" data-speed="2500">0</span>
+								</h3>
+								<p class="small-text">Obedient Dogs</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="icon-box text-center">
+								<h3 class="text-uppercase counter-wrap color-main4">
+									<span class="counter" data-from="0" data-to="6308" data-speed="2500">0</span>
+								</h3>
+								<p class="small-text">Days With You</p>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="icon-box text-center">
+								<h3 class="text-uppercase counter-wrap color-main4">
+									<span class="counter" data-from="0" data-to="87" data-speed="2500">0</span>
+								</h3>
+								<p class="small-text">New Equipments</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="featured" class="ls s-py-60 s-py-md-90  s-py-xl-160 text-center featured-section back-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-8 offset-xl-2 text-center mt--5">
+							<p class="top-subtitle">Meet</p>
+							<h3 class="special-heading">Our Featured</h3>
+							<img src="./dog.png" alt="dog">
+							<p>
+								You’ll enjoy knowing our dedicated team will do whatever is needed to keep your pets happy, healthy and safe when you’re away from home.
+							</p>
+							<div class="mt-45"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="owl-carousel owl-loaded owl-drag owl-theme" data-loop="false" data-margin="30" data-nav="true" data-dots="true" data-center="false" data-items="1" data-autoplay="true" data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="2" data-responsive-lg="3">
+								
+								
+								
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: 0.25s; width: 2400px;"><div class="owl-item" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="0">
+									<div class="item-media">
+										<img src="./01.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Richard K. Puckett</a>
+										</h5>
+
+										<p class="  color-main4">
+											Cynologist
+										</p>
+										<p>
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="1">
+									<div class="item-media">
+										<img src="./02.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Lillian W. Roebuck</a>
+										</h5>
+
+										<p class="  color-main4">
+											Dog Walker
+										</p>
+										<p>
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa  fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="2">
+									<div class="item-media">
+										<img src="./03.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Billy J. McArthur</a>
+										</h5>
+
+										<p class="  color-main4">
+											Cynologist
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit, sed do colon dir pol.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa  fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="3">
+									<div class="item-media">
+										<img src="./04.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Sandra J. Wade</a>
+										</h5>
+
+										<p class="  color-main4">
+											Consulatant
+										</p>
+										<p>
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa  fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="4">
+									<div class="item-media">
+										<img src="./05.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Wilbert N. Duke</a>
+										</h5>
+
+										<p class="  color-main4">
+											Dog Walker
+										</p>
+										<p>
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa  fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="team ls vertical-item content-padding text-center box-shadow" data-index="5">
+									<div class="item-media">
+										<img src="./06.jpg" alt="img">
+										<div class="media-links">
+											<a class="abs-link" title="" href="https://html.modernwebtemplates.com/venator/team-single.html"></a>
+										</div>
+									</div>
+									<div class="item-content">
+										<h5>
+											<a href="https://html.modernwebtemplates.com/venator/team-single.html">Ashely A. Ferrer</a>
+										</h5>
+
+										<p class="  color-main4">
+											Cynologist
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing
+											elit, sed do colon dir pol.
+										</p>
+										<p class="social-icons">
+
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook" title="facebook"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter" title="twitter"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google" title="google"></a>
+											<a href="https://html.modernwebtemplates.com/venator/#" class="fa  fa-linkedin" title="linkedin"></a>
+
+										</p>
+
+									</div>
+								</div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="fa fa-chevron-left"></i></div><div class="owl-next disabled"><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds ms c-gutter-0 container-px-0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="owl-carousel small-gallery-carousel owl-loaded owl-drag owl-theme" data-margin="0" data-responsive-lg="5" data-responsive-md="4" data-responsive-sm="3" data-responsive-xs="2" data-nav="false" data-loop="true">
+								
+								
+								
+								
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1905px, 0px, 0px); transition: all; width: 6477px;"><div class="owl-item cloned" style="width: 381px;"><a href="./03(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="2">
+									<img src="./03(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./04(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="3">
+									<img src="./04(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./05(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="4">
+									<img src="./05(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./06(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="5">
+									<img src="./06(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./07.jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="6">
+									<img src="./07.jpg" alt="img">
+								</a></div><div class="owl-item active" style="width: 381px;"><a href="./01(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="0">
+									<img src="./01(1).jpg" alt="img">
+								</a></div><div class="owl-item active" style="width: 381px;"><a href="./02(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="1">
+									<img src="./02(1).jpg" alt="img">
+								</a></div><div class="owl-item active" style="width: 381px;"><a href="./03(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="2">
+									<img src="./03(1).jpg" alt="img">
+								</a></div><div class="owl-item active" style="width: 381px;"><a href="./04(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="3">
+									<img src="./04(1).jpg" alt="img">
+								</a></div><div class="owl-item active" style="width: 381px;"><a href="./05(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="4">
+									<img src="./05(1).jpg" alt="img">
+								</a></div><div class="owl-item" style="width: 381px;"><a href="./06(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="5">
+									<img src="./06(1).jpg" alt="img">
+								</a></div><div class="owl-item" style="width: 381px;"><a href="./07.jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="6">
+									<img src="./07.jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./01(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="0">
+									<img src="./01(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./02(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="1">
+									<img src="./02(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./03(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="2">
+									<img src="./03(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./04(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="3">
+									<img src="./04(1).jpg" alt="img">
+								</a></div><div class="owl-item cloned" style="width: 381px;"><a href="./05(1).jpg" class="photoswipe-link" data-width="600" data-height="600" data-index="4">
+									<img src="./05(1).jpg" alt="img">
+								</a></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-chevron-left"></i></div><div class="owl-next"><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots disabled"></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="quote" class="ls s-py-60 s-py-md-90 s-py-xl-160 testimonials-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="owl-carousel owl-loaded owl-drag owl-theme" data-loop="false" data-margin="30" data-nav="false" data-dots="true" data-center="false" data-items="1" data-autoplay="true" data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="1" data-responsive-lg="1">
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2400px, 0px, 0px); transition: 0.25s; width: 3600px;"><div class="owl-item" style="width: 1170px; margin-right: 30px;"><blockquote class="quote-item" data-index="0">
+									<div class="quote-image">
+										<img src="./testimonials_01.jpg" alt="img">
+									</div>
+									<h5>Kathy D. Grayson</h5>
+									<p class="type color-main">
+										client
+									</p>
+									<p>
+										After the first lesson there was already a huge improvment. Elvis was learning to walk by my side and not run off every time a person or dog walked passed us. She was also learning basic commands like stay and come which before I would of never thought possible. Elvis is now a regualr at dog beach and one of the best behaved dogs there!
+									</p>
+								</blockquote></div><div class="owl-item" style="width: 1170px; margin-right: 30px;"><blockquote class="quote-item" data-index="1">
+									<div class="quote-image">
+										<img src="./testimonials_02.jpg" alt="img">
+									</div>
+									<h5>Angela R. Sanford</h5>
+									<p class="type color-main">
+										client
+									</p>
+									<p>
+										After the first lesson there was already a huge improvment. Elvis was learning to walk by my side and not run off every time a person or dog walked passed us. She was also learning basic commands like stay and come which before I would of never thought possible. Elvis is now a regualr at dog beach and one of the best behaved dogs there!
+									</p>
+								</blockquote></div><div class="owl-item active" style="width: 1170px; margin-right: 30px;"><blockquote class="quote-item" data-index="2">
+									<div class="quote-image">
+										<img src="./testimonials_03.jpg" alt="img">
+									</div>
+									<h5>Eric B. Moore</h5>
+									<p class="type color-main">
+										client
+									</p>
+									<p>
+										After the first lesson there was already a huge improvment. Elvis was learning to walk by my side and not run off every time a person or dog walked passed us. She was also learning basic commands like stay and come which before I would of never thought possible. Elvis is now a regualr at dog beach and one of the best behaved dogs there!
+									</p>
+								</blockquote></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-chevron-left"></i></div><div class="owl-next"><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="why" class="why-section back-bg2 container-px-0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="embed-responsive embed-responsive-3by2">
+								<a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+									<div class="embed-responsive-content">
+										<span>Watch</span>
+										<span>Video</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 ">
+							<div class="right-section">
+								<p class="top-subtitle">Why People</p>
+								<h3 class="special-heading">Choose Us</h3>
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./07.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5>
+											Modern Equiwipment
+										</h5>
+										<p>
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco pertrudo balticos ibn hatab.
+										</p>
+									</div>
+								</div>
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./08.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5>
+											Professional Cynologists
+										</h5>
+										<p>
+											Duis aute irure dolor in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.
+										</p>
+									</div>
+								</div>
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./09.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5>
+											Happy Pets
+										</h5>
+										<p>
+											Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+										</p>
+									</div>
+								</div>
+								<div class="media icon-special">
+									<div class="icon-styled">
+										<img src="./10.png" alt="img">
+									</div>
+									<div class="media-body">
+										<h5>
+											Positive Reviews
+										</h5>
+										<p>
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="blog" class="ls s-py-60 s-py-md-90  s-py-xl-160 text-center blog-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-10 offset-xl-1 text-center mt--5">
+							<p class="top-subtitle">Our</p>
+							<h3 class="special-heading">Blog</h3>
+							<img src="./dog.png" alt="dog">
+							<p>
+								The resulting 3-phase dog training model was a powerful, naturally balanced system which produced astonishingly fast results. That was when the Canis dog training system was born.
+							</p>
+							<div class="mt-45"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="owl-carousel owl-loaded owl-drag owl-theme" data-loop="true" data-margin="30" data-nav="false" data-dots="false" data-center="false" data-items="1" data-autoplay="true" data-responsive-xs="1" data-responsive-sm="1" data-responsive-md="2" data-responsive-lg="3">
+								<!-- #post-## -->
+								<!-- #post-## -->
+								<!-- #post-## -->
+								<!-- #post-## -->
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2400px, 0px, 0px); transition: 0.25s; width: 4000px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="1">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./01(2).jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">31.01.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													What to do when your dog misbehaves barticol con.
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="2">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./19.jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">01.02.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Commands vs: What are they and why does it matter?
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Duis aute irure dolor in in voluptate velit esse cillum dolore eu fugiat nulla.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="3">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./05(2).jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">03.02.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Knee Pain in Martial Arts: Causes. Carti fon berandus
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, pariatur?
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="0">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./18.jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">28.01.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Ways to reset when you get frustrated with your dog.
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+												sed do eiusmod tempor.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="1">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./01(2).jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">31.01.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													What to do when your dog misbehaves barticol con.
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="2">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./19.jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">01.02.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Commands vs: What are they and why does it matter?
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Duis aute irure dolor in in voluptate velit esse cillum dolore eu fugiat nulla.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="3">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./05(2).jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">03.02.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Knee Pain in Martial Arts: Causes. Carti fon berandus
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, pariatur?
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="0">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./18.jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">28.01.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Ways to reset when you get frustrated with your dog.
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+												sed do eiusmod tempor.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="1">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./01(2).jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">31.01.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													What to do when your dog misbehaves barticol con.
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="vertical-item content-padding box-shadow text-center post type-post status-publish format-standard has-post-thumbnail mb-2" data-index="2">
+									<div class="item-media post-thumbnail">
+										<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">
+											<img src="./19.jpg" alt="img">
+										</a>
+									</div><!-- .post-thumbnail -->
+									<div class="item-content">
+										<header class="entry-header text-center">
+											<p class="item-meta">
+												<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html">01.02.2018</a>
+											</p>
+											<h3 class="entry-title">
+												<a class="" href="https://html.modernwebtemplates.com/venator/blog-single-full.html" rel="bookmark">
+													Commands vs: What are they and why does it matter?
+												</a>
+											</h3>
+										</header>
+										<!-- .entry-header -->
+										<div class="entry-content text-center">
+											<p>
+												Duis aute irure dolor in in voluptate velit esse cillum dolore eu fugiat nulla.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/blog-single-full.html" class="btn btn-maincolor">read more</a>
+										</div>
+
+									</div><!-- .item-content -->
+								</article></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-chevron-left"></i></div><div class="owl-next"><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots disabled"></div></div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contacts" class="ds s-py-60 s-py-md-90 s-py-xl-80 s-py-xl-160 s-overlay s-parallax consultation-section">
+				<div class="container">
+					<div class="col-md-10 offset-md-1 text-center mt--5">
+						<p class="top-subtitle">Get in</p>
+						<h3 class="special-heading line-after">Touch</h3>
+					</div>
+					<div class="col-12 col-xl-8 offset-xl-2 px-0 mt-40">
+						<form class="contact-form c-mb-lg-20 c-mb-10 c-gutter-20" method="post" action="https://html.modernwebtemplates.com/">
+
+							<div class="row">
+
+								<div class="col-xl-6">
+									<div class="form-group has-placeholder">
+										<label for="name">Your Name<span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control text-center" placeholder="Your Name">
+									</div>
+								</div>
+
+								<div class="col-xl-6">
+									<div class="form-group has-placeholder">
+										<label for="phone">Your Phone<span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control text-center" placeholder="Your Phone">
+									</div>
+								</div>
+
+								<div class="col-xl-6">
+									<div class="form-group has-placeholder">
+										<label for="email">Email address<span class="required">*</span></label>
+										<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control text-center" placeholder="Email Address">
+									</div>
+								</div>
+
+								<div class="col-xl-6">
+									<div class="form-group has-placeholder">
+										<label for="subject">Your subject<span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="email" id="subject" class="form-control text-center" placeholder="Your subject">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group has-placeholder">
+										<label for="message">Your Message</label>
+										<textarea aria-required="true" rows="6" cols="45" name="message" id="message" class="form-control text-center" placeholder="Your Message"></textarea>
+									</div>
+								</div>
+
+							</div>
+							<div class="row mt-15">
+								<div class="divider-20 hidden-above-lg"></div>
+								<div class="col-sm-12 text-center">
+									<div class="form-group buttons-group">
+										<button type="submit" id="contact_form_submit" name="contact_submit" class="btn btn-maincolor">Send Message</button>
+									</div>
+								</div>
+
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section id="partners" class="ls s-py-60 s-py-md-90 container-px-xl-120 partners-section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="owl-carousel owl-loaded owl-drag owl-theme" data-loop="true" data-margin="30" data-nav="false" data-dots="false" data-center="false" data-items="1" data-autoplay="true" data-responsive-xs="2" data-responsive-sm="3" data-responsive-md="4" data-responsive-lg="7">
+								
+								
+								
+								
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2421px, 0px, 0px); transition: 0.25s; width: 5086px;"><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="0"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./01(3).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="1"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./02(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="2"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./03(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="3"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./04(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="4"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./05(3).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="5"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./06(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="6"> <a href="https://html.modernwebtemplates.com/venator/#"><img src="./07(1).png" alt="img"></a></div></div><div class="owl-item" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="0"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./01(3).png" alt="img"></a></div></div><div class="owl-item" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="1"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./02(2).png" alt="img"></a></div></div><div class="owl-item" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="2"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./03(2).png" alt="img"></a></div></div><div class="owl-item active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="3"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./04(2).png" alt="img"></a></div></div><div class="owl-item active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="4"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./05(3).png" alt="img"></a></div></div><div class="owl-item active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="5"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./06(2).png" alt="img"></a></div></div><div class="owl-item active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="6"> <a href="https://html.modernwebtemplates.com/venator/#"><img src="./07(1).png" alt="img"></a></div></div><div class="owl-item cloned active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="0"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./01(3).png" alt="img"></a></div></div><div class="owl-item cloned active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="1"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./02(2).png" alt="img"></a></div></div><div class="owl-item cloned active" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="2"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./03(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="3"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./04(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="4"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./05(3).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="5"><a href="https://html.modernwebtemplates.com/venator/#"><img src="./06(2).png" alt="img"></a></div></div><div class="owl-item cloned" style="width: 212.143px; margin-right: 30px;"><div class="" data-index="6"> <a href="https://html.modernwebtemplates.com/venator/#"><img src="./07(1).png" alt="img"></a></div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-chevron-left"></i></div><div class="owl-next"><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots disabled"></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="page_footer ds s-pb-35 s-pt-60 s-pb-md-70 s-pt-md-90 s-pb-xl-130 s-pt-xl-160 c-mb-20 c-gutter-30 container-px-0">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget widget_twitter">
+								<h3 class="widget-title">Twitter</h3>
+								<div class="twitter-item">
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/%E2%84%96">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+									<div class="media">
+										<div class="icon-styled color-main fs-18">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</div>
+										<div class="media-body color_1">
+											<p>
+												Tamquam eligendi ex qui ex sea aliquam blandit has cum tacimates.
+											</p>
+											<a href="https://html.modernwebtemplates.com/venator/%E2%84%96">http://on.bcg.com/2enKlr7</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+
+							<div class="widget widget_icons_list">
+								<h3 class="widget-title">Our Contacts</h3>
+
+								<ul class="mb-10">
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<p>3112 Stonecoal Road Toledo, OH 43602</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<a href="https://html.modernwebtemplates.com/venator/#">canis@support.com</a>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-phone"></i>
+										</div>
+										<p>0 (800) 321 654</p>
+									</li>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top color-main4 fs-14">
+											<i class="fa fa-clock-o"></i>
+										</div>
+										<p>Working hours: 9.00 - 20.00 </p>
+									</li>
+								</ul>
+
+								<span class="social-icons">
+									<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-twitter  rounded-icon color-bg-icon footer-icon" title="twitter"></a>
+									<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-google  rounded-icon color-bg-icon footer-icon" title="google"></a>
+									<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-facebook  rounded-icon color-bg-icon footer-icon" title="facebook"></a>
+									<a href="https://html.modernwebtemplates.com/venator/#" class="fa fa-linkedin  rounded-icon color-bg-icon footer-icon" title="linkedin"></a>
+								</span>
+							</div>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+							<div class="widget mb-0">
+
+								<h3 class="widget-title">Newsletter</h3>
+
+								<p class="color-font mb-3">
+									Subscribe to our Newsletter to be updated,
+									we promise not to spam.
+								</p>
+
+								<form class="signup" action="https://html.modernwebtemplates.com/">
+
+									<input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email text-center text-lg-left" placeholder="Enter Email Address">
+
+									<button type="submit" class="btn btn-maincolor mt-30">
+										Subscribe
+									</button>
+									<div class="response"></div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ds s-py-5">
+				<div class="container border-top-color">
+					<div class="row align-items-center ">
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+						<div class="col-md-12 text-center">
+							<p>© Copyright <span class="copyright_year">2018</span> All Rights Reserved</p>
+						</div>
+						<div class="divider-20 d-none d-lg-block"></div>
+						<div class="divider-10 d-none d-md-block d-lg-none"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="./compressed.js.download"></script>
+	<script src="./main.js.download"></script>
+	<script src="./switcher.js.download"></script>
+
+<script type="module" src="./v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;c3ad5c9eb7e440d5ad69cf416dc37b40&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+<a href="https://html.modernwebtemplates.com/venator/#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a><div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><a class="pswp__button pswp__button--close" title="Close (Esc)"></a><a class="pswp__button pswp__button--share" title="Share"></a><a class="pswp__button pswp__button--fs" title="Toggle fullscreen"></a><a class="pswp__button pswp__button--zoom" title="Zoom in/out"></a><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div> </div><a class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></a><a class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></a><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div><div id="switcher"><div class="color_switcher_header"><span class="fa fa-cog"></span><h4>Styles Selector</h4></div><div id="switcher_accent_color"><p>Accent color:</p><ul id="switcher-colors" class="list-inline"><li><a href="https://html.modernwebtemplates.com/venator/#" data-color="" class="color1"></a></li><li><a href="https://html.modernwebtemplates.com/venator/#" data-color="2" class="color2"></a></li><li><a href="https://html.modernwebtemplates.com/venator/#" data-color="3" class="color3"></a></li></ul></div></div></body></html>

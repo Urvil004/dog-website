@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canine Behavioral Academy | Calm &amp; Obedient Dog Training</title>
+  <meta name="description" content="A better bond starts with a happier, calmer dog. Humane, positive-reinforcement canine behavior and obedience training by certified specialists.">
+
+  <!-- Editorial Typography: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Redesigned Hero, Philosophy & Programs Stylesheet -->
+  <link rel="stylesheet" href="assets/css/redesign.css?v=3.0">
+
+  <!-- =========================================================================
+       Redesigned Navigation Bar & Layered Footer Stylesheet (.rt-*)
+       ========================================================================= -->
+  <style id="rt-nav-footer-styles">
+    /* Target section scroll-margin-top for sticky nav offset */
+    #hero,
+    #philosophy,
+    #programs,
+    #training,
+    #gallery,
+    #pricing,
+    #s7-stories,
+    #s7-faq-section,
+    #s7-contact-block {
+      scroll-margin-top: 84px;
+    }
+
+    /* --------------------------------------------------------------------------
+       PART A: Redesigned Sticky Navigation Bar (.rt-navbar)
+       -------------------------------------------------------------------------- */
+    .rt-navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: rgba(247, 245, 239, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(23, 76, 60, 0.12);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rt-navbar.is-scrolled {
+      background-color: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 4px 20px rgba(16, 55, 45, 0.06);
+      border-bottom-color: rgba(23, 76, 60, 0.16);
+    }
+
+    .rt-navbar__container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    /* Brand Logo */
+    .rt-navbar__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .rt-navbar__brand:hover {
+      transform: translateY(-1px);
+    }
+
+    .rt-navbar__logo-img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .rt-navbar__brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rt-navbar__brand-title {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: #10372D;
+    }
+
+    .rt-navbar__brand-accent {
+      color: #174C3C;
+    }
+
+    .rt-navbar__brand-tagline {
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #657168;
+    }
+
+    /* Desktop Navigation Menu */
+    .rt-navbar__menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rt-navbar__link {
+      position: relative;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #202A25;
+      text-decoration: none;
+      padding: 8px 0;
+      transition: color 0.2s ease, font-weight 0.2s ease;
+    }
+
+    .rt-navbar__link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #174C3C;
+      border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rt-navbar__link:hover {
+      color: #174C3C;
+    }
+
+    .rt-navbar__link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .rt-navbar__link.is-active {
+      color: #174C3C;
+      font-weight: 700;
+    }
+
+    .rt-navbar__link.is-active::after {
+      transform: scaleX(1);
+    }
+
+    .rt-navbar__link:focus-visible {
+      outline: 2px solid #174C3C;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* Navbar CTA Actions */
+    .rt-navbar__actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .rt-navbar__cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 22px;
+      background-color: #174C3C;
+      color: #FFFFFF;
+      border-radius: 10px;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.925rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 14px rgba(23, 76, 60, 0.2);
+      border: none;
+      cursor: pointer;
+    }
+
+    .rt-navbar__cta-btn:hover {
+      background-color: #10372D;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 55, 45, 0.28);
+      color: #FFFFFF;
+    }
+
+    .rt-navbar__cta-btn:focus-visible {
+      outline: 3px solid #A9BEAA;
+      outline-offset: 3px;
+    }
+
+    .rt-navbar__cta-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    /* Mobile Toggle Hamburger */
+    .rt-navbar__toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      background: transparent;
+      border: 1px solid rgba(23, 76, 60, 0.16);
+      border-radius: 10px;
+      color: #10372D;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .rt-navbar__toggle:hover {
+      background-color: #E8EEE5;
+      border-color: #A9BEAA;
+    }
+
+    .rt-navbar__toggle:focus-visible {
+      outline: 2px solid #174C3C;
+      outline-offset: 2px;
+    }
+
+    .rt-navbar__toggle-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Mobile Drawer */
+    .rt-navbar__mobile-drawer {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      .rt-navbar__menu,
+      .rt-navbar__actions .rt-navbar__cta-btn {
+        display: none;
+      }
+
+      .rt-navbar__toggle {
+        display: flex;
+      }
+
+      .rt-navbar__mobile-drawer {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F7F5EF;
+        border-bottom: 1px solid rgba(23, 76, 60, 0.16);
+        box-shadow: 0 16px 36px rgba(16, 55, 45, 0.12);
+        padding: 24px 32px 32px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease;
+      }
+
+      .rt-navbar__mobile-drawer.is-open {
+        max-height: 520px;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .rt-navbar__mobile-list {
+        list-style: none;
+        margin: 0 0 24px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .rt-navbar__mobile-link {
+        display: block;
+        padding: 12px 14px;
+        font-family: var(--font-heading, 'Outfit', sans-serif);
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #202A25;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.2s ease, color 0.2s ease;
+      }
+
+      .rt-navbar__mobile-link:hover,
+      .rt-navbar__mobile-link.is-active {
+        background-color: #E8EEE5;
+        color: #174C3C;
+      }
+
+      .rt-navbar__mobile-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .rt-navbar__container {
+        padding: 0 20px;
+        height: 72px;
+      }
+
+      .rt-navbar__mobile-drawer {
+        padding: 20px 20px 28px;
+      }
+
+      .rt-navbar__brand-title {
+        font-size: 1.15rem;
+      }
+
+      .rt-navbar__brand-tagline {
+        font-size: 0.625rem;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       PART B: Redesigned Layered Footer (.rt-footer)
+       Deep forest-green (#10372D), ivory text (#F7F5EF), muted sage (#A9BEAA)
+       -------------------------------------------------------------------------- */
+    .rt-footer {
+      background-color: #10372D;
+      color: #F7F5EF;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      padding: 88px 0 36px;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid rgba(169, 190, 170, 0.16);
+    }
+
+    .rt-footer::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(169, 190, 170, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .rt-footer__container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Main Grid Layout */
+    .rt-footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr 1fr 1.35fr;
+      gap: 48px;
+      margin-bottom: 64px;
+    }
+
+    /* Col 1: Brand & Mission */
+    .rt-footer__brand-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rt-footer__brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      margin-bottom: 18px;
+    }
+
+    .rt-footer__brand-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .rt-footer__brand-title {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 1.35rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #FFFFFF;
+    }
+
+    .rt-footer__brand-tagline {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #A9BEAA;
+    }
+
+    .rt-footer__desc {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: rgba(247, 245, 239, 0.85);
+      margin: 0 0 20px;
+      max-width: 340px;
+    }
+
+    .rt-footer__pledge-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(169, 190, 170, 0.2);
+      border-radius: 9999px;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: #E7DDC8;
+      margin-bottom: 24px;
+      width: fit-content;
+    }
+
+    .rt-footer__pledge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #A9BEAA;
+    }
+
+    .rt-footer__socials {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .rt-footer__social-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(169, 190, 170, 0.22);
+      color: #F7F5EF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .rt-footer__social-btn:hover {
+      background-color: #174C3C;
+      border-color: #A9BEAA;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .rt-footer__social-btn:focus-visible {
+      outline: 2px solid #A9BEAA;
+      outline-offset: 2px;
+    }
+
+    /* Col 2 & 3: Link Columns */
+    .rt-footer__col-heading {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      margin: 0 0 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .rt-footer__col-heading::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #A9BEAA;
+      border-radius: 2px;
+    }
+
+    .rt-footer__link-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rt-footer__link {
+      font-size: 0.925rem;
+      color: rgba(247, 245, 239, 0.78);
+      text-decoration: none;
+      transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rt-footer__link:hover {
+      color: #FFFFFF;
+      transform: translateX(3px);
+    }
+
+    .rt-footer__link:focus-visible {
+      outline: 2px solid #A9BEAA;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* Col 4: Newsletter Card */
+    .rt-footer__newsletter-card {
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(169, 190, 170, 0.22);
+      border-radius: 18px;
+      padding: 30px 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .rt-footer__newsletter-title {
+      font-family: var(--font-heading, 'Outfit', sans-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 0 0 8px;
+      line-height: 1.25;
+    }
+
+    .rt-footer__newsletter-desc {
+      font-size: 0.8875rem;
+      line-height: 1.55;
+      color: rgba(247, 245, 239, 0.82);
+      margin: 0 0 20px;
+    }
+
+    .rt-footer__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .rt-footer__input-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .rt-footer__input {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid rgba(169, 190, 170, 0.35);
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.9rem;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .rt-footer__input::placeholder {
+      color: rgba(247, 245, 239, 0.55);
+    }
+
+    .rt-footer__input:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.16);
+      border-color: #A9BEAA;
+      box-shadow: 0 0 0 3px rgba(169, 190, 170, 0.25);
+    }
+
+    .rt-footer__submit-btn {
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #F7F5EF;
+      color: #10372D;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .rt-footer__submit-btn:hover {
+      background-color: #E7DDC8;
+      transform: translateY(-1px);
+    }
+
+    .rt-footer__submit-btn:focus-visible {
+      outline: 2px solid #FFFFFF;
+      outline-offset: 2px;
+    }
+
+    .rt-footer__form-note {
+      font-size: 0.75rem;
+      color: #A9BEAA;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .rt-footer__form-status {
+      font-size: 0.8125rem;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-top: 6px;
+      display: none;
+    }
+
+    .rt-footer__form-status.is-visible {
+      display: block;
+    }
+
+    .rt-footer__form-status.is-success {
+      background-color: rgba(169, 190, 170, 0.18);
+      color: #E7DDC8;
+      border: 1px solid rgba(169, 190, 170, 0.3);
+    }
+
+    .rt-footer__form-status.is-error {
+      background-color: rgba(220, 80, 80, 0.18);
+      color: #FFC0C0;
+      border: 1px solid rgba(220, 80, 80, 0.3);
+    }
+
+    /* Footer Bottom Legal & Back to Top */
+    .rt-footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(169, 190, 170, 0.18);
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.845rem;
+      color: rgba(247, 245, 239, 0.7);
+    }
+
+    .rt-footer__legal-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .rt-footer__legal-link {
+      color: rgba(247, 245, 239, 0.7);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .rt-footer__legal-link:hover {
+      color: #FFFFFF;
+    }
+
+    .rt-footer__legal-link:focus-visible {
+      outline: 2px solid #A9BEAA;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .rt-footer__back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 9999px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(169, 190, 170, 0.25);
+      color: #F7F5EF;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.22s ease;
+    }
+
+    .rt-footer__back-to-top:hover {
+      background-color: #174C3C;
+      border-color: #A9BEAA;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .rt-footer__back-to-top:focus-visible {
+      outline: 2px solid #A9BEAA;
+      outline-offset: 2px;
+    }
+
+    /* Responsive Footer Breakpoints */
+    @media (max-width: 1024px) {
+      .rt-footer {
+        padding: 72px 0 32px;
+      }
+
+      .rt-footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      .rt-footer__brand-col {
+        max-width: 100%;
+      }
+
+      .rt-footer__desc {
+        max-width: 100%;
+      }
+
+      .rt-footer__newsletter-card {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .rt-footer__container {
+        padding: 0 20px;
+      }
+
+      .rt-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .rt-footer__newsletter-card {
+        grid-column: span 1;
+      }
+
+      .rt-footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .rt-footer__legal-links {
+        gap: 16px;
+      }
+
+      .rt-footer__back-to-top {
+        align-self: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .rt-footer__input-row {
+        flex-direction: column;
+      }
+
+      .rt-footer__submit-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="redesign-body">
+
+  <!-- =========================================================================
+       Redesigned Sticky Navigation Bar (.rt-navbar)
+       ========================================================================= -->
+  <header class="rt-navbar" id="rt-site-header">
+    <div class="rt-navbar__container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="rt-navbar__brand" aria-label="PawTrainer Homepage">
+        <img src="assets/images/logo-paw.png" alt="PawTrainer Canine Academy Logo" class="rt-navbar__logo-img">
+        <div class="rt-navbar__brand-text">
+          <span class="rt-navbar__brand-title">PAW<span class="rt-navbar__brand-accent">TRAINER</span></span>
+          <span class="rt-navbar__brand-tagline">Dog Training &amp; Obedience</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="rt-navbar__nav" aria-label="Primary Navigation">
+        <ul class="rt-navbar__menu">
+          <li><a href="#hero" class="rt-navbar__link is-active">Home</a></li>
+          <li><a href="#philosophy" class="rt-navbar__link">Academy</a></li>
+          <li><a href="#programs" class="rt-navbar__link">Programs</a></li>
+          <li><a href="#training" class="rt-navbar__link">Course</a></li>
+          <li><a href="#pricing" class="rt-navbar__link">Pricing</a></li>
+          <li><a href="#s7-stories" class="rt-navbar__link">Reviews</a></li>
+          <li><a href="#s7-contact-block" class="rt-navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Action & Mobile Toggle -->
+      <div class="rt-navbar__actions">
+        <a href="#s7-contact-block" class="rt-navbar__cta-btn" id="rtNavCta">
+          <span>Book a Free Assessment</span>
+          <svg class="rt-navbar__cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="rt-navbar__toggle" id="rt-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="rt-mobile-menu">
+          <svg class="rt-navbar__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="rt-navbar__mobile-drawer" id="rt-mobile-menu" aria-label="Mobile Navigation">
+      <ul class="rt-navbar__mobile-list">
+        <li><a href="#hero" class="rt-navbar__mobile-link is-active">Home</a></li>
+        <li><a href="#philosophy" class="rt-navbar__mobile-link">Academy</a></li>
+        <li><a href="#programs" class="rt-navbar__mobile-link">Programs</a></li>
+        <li><a href="#training" class="rt-navbar__mobile-link">Course</a></li>
+        <li><a href="#pricing" class="rt-navbar__mobile-link">Pricing</a></li>
+        <li><a href="#s7-stories" class="rt-navbar__mobile-link">Reviews</a></li>
+        <li><a href="#s7-contact-block" class="rt-navbar__mobile-link">Contact</a></li>
+      </ul>
+      <a href="#s7-contact-block" class="rt-navbar__cta-btn rt-navbar__mobile-cta">
+        <span>Book a Free Assessment</span>
+        <svg class="rt-navbar__cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         Redesigned Hero Section (Warm Ivory & Forest Green Split Composition)
+         ========================================================================= -->
+    <section class="redesign-hero" id="hero" aria-label="Canine Academy Introduction">
+      <div class="redesign-hero__container">
+        <div class="redesign-hero__layout">
+          
+          <!-- Left Content Column (~52%) -->
+          <div class="redesign-hero__content">
+            
+            <!-- Eyebrow Label -->
+            <div class="redesign-hero__eyebrow" role="text">
+              <span class="redesign-hero__eyebrow-dot" aria-hidden="true"></span>
+              <span class="redesign-hero__eyebrow-text">CANINE BEHAVIOR &amp; POSITIVE REINFORCEMENT</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="redesign-hero__title">
+              A Better Bond Starts With a <span class="redesign-hero__title-highlight">Happier, Calmer Dog.</span>
+            </h1>
+
+            <!-- Supporting Paragraph -->
+            <p class="redesign-hero__text">
+              From leash manners to everyday obedience, we help dogs and their people build lasting confidence through humane, positive-reinforcement training.
+            </p>
+
+            <!-- CTA Actions -->
+            <div class="redesign-hero__actions">
+              <a href="#assessment" class="redesign-hero__btn redesign-hero__btn--primary" id="heroBookAssessment">
+                <span>Book a Free Assessment</span>
+                <svg class="redesign-hero__btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#training" class="redesign-hero__btn redesign-hero__btn--secondary" id="heroExploreTraining">
+                <span>Explore Our Training</span>
+                <svg class="redesign-hero__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="redesign-hero__trust" aria-label="Accreditations and client ratings">
+              <!-- Indicator 1 -->
+              <div class="redesign-hero__trust-card">
+                <div class="redesign-hero__trust-stars" aria-label="5 out of 5 stars">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div class="redesign-hero__trust-meta">
+                  <span class="redesign-hero__trust-val">4.9 / 5 Rating</span>
+                  <span class="redesign-hero__trust-sub">500+ Local Pet Parents</span>
+                </div>
+              </div>
+
+              <!-- Subtle Divider -->
+              <div class="redesign-hero__trust-divider" aria-hidden="true"></div>
+
+              <!-- Indicator 2 -->
+              <div class="redesign-hero__trust-card">
+                <div class="redesign-hero__trust-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="redesign-hero__trust-meta">
+                  <span class="redesign-hero__trust-val">Certified Training</span>
+                  <span class="redesign-hero__trust-sub">Humane, Positive Reinforcement</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Visual Column (~48%) -->
+          <div class="redesign-hero__media">
+            <!-- Decorative organic backdrop -->
+            <div class="redesign-hero__media-backdrop" aria-hidden="true"></div>
+            
+            <div class="redesign-hero__image-wrapper">
+              <img 
+                src="assets/images/slide01.jpg" 
+                alt="Smiling dog trainer giving a joyful high-five to a calm, well-behaved golden labrador" 
+                class="redesign-hero__image"
+                width="620"
+                height="520"
+                loading="eager"
+                fetchpriority="high"
+              >
+              <!-- Floating Boutique Badge -->
+              <div class="redesign-hero__floating-badge" aria-hidden="true">
+                <div class="redesign-hero__floating-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div class="redesign-hero__floating-badge-text">
+                  <strong>Patience &bull; Trust &bull; Results</strong>
+                  <span>Humane Behavioral Methods</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- =========================================================================
+             Statistics Panel (Integrated below Hero)
+             ========================================================================= -->
+        <div class="redesign-hero__stats" role="region" aria-label="Key academy statistics">
+          
+          <!-- Stat 1 -->
+          <div class="redesign-hero__stat">
+            <div class="redesign-hero__stat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="redesign-hero__stat-details">
+              <div class="redesign-hero__stat-value">1,400+</div>
+              <div class="redesign-hero__stat-label">Dogs Successfully Trained</div>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="redesign-hero__stat">
+            <div class="redesign-hero__stat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <div class="redesign-hero__stat-details">
+              <div class="redesign-hero__stat-value">99.2%</div>
+              <div class="redesign-hero__stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="redesign-hero__stat">
+            <div class="redesign-hero__stat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="redesign-hero__stat-details">
+              <div class="redesign-hero__stat-value">14+</div>
+              <div class="redesign-hero__stat-label">Years of Experience</div>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="redesign-hero__stat">
+            <div class="redesign-hero__stat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="redesign-hero__stat-details">
+              <div class="redesign-hero__stat-value">6</div>
+              <div class="redesign-hero__stat-label">Training Specialists</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 2: Philosophy & Training Approach
+         ========================================================================= -->
+    <section class="redesign-philosophy" id="philosophy" aria-label="Academy Philosophy and Training Approach">
+      <div class="redesign-philosophy__container">
+        
+        <!-- Architectural Inset Frame for Section 2 -->
+        <div class="redesign-philosophy__inner-frame">
+          <div class="redesign-philosophy__layout">
+
+            <!-- Left Column (~46%): Photograph with Architectural Matting & Floating Trust Card -->
+            <div class="redesign-philosophy__visual">
+              <div class="redesign-philosophy__visual-backdrop" aria-hidden="true"></div>
+              
+              <div class="redesign-philosophy__image-wrap">
+                <img 
+                  src="assets/images/18.jpg" 
+                  alt="Child gently embracing her dog by a sunlit window in calm, affectionate companionship" 
+                  class="redesign-philosophy__image"
+                  width="740"
+                  height="500"
+                  loading="lazy"
+                >
+                <!-- Editorial Corner Badge on Image -->
+                <div class="redesign-philosophy__image-tag" aria-hidden="true">
+                  <span class="redesign-philosophy__image-tag-dot"></span>
+                  <span>FEAR-FREE ACADEMY</span>
+                </div>
+              </div>
+
+              <!-- Floating Trust Card -->
+              <div class="redesign-philosophy__trust-card" role="region" aria-label="Positive First Guarantee">
+                <div class="redesign-philosophy__trust-card-top">
+                  <span class="redesign-philosophy__trust-kicker">APEX CORE PLEDGE</span>
+                </div>
+                <div class="redesign-philosophy__trust-card-body">
+                  <div class="redesign-philosophy__trust-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="redesign-philosophy__trust-content">
+                    <h3 class="redesign-philosophy__trust-title">Positive First</h3>
+                    <p class="redesign-philosophy__trust-desc">Zero Fear, Zero Intimidation.<br>Pure Understanding &amp; Clarity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column (~54%): Content, Eyebrow, Heading, Principles, CTA -->
+            <div class="redesign-philosophy__content">
+              
+              <!-- Eyebrow Label -->
+              <div class="redesign-philosophy__eyebrow" role="text">
+                <span class="redesign-philosophy__eyebrow-accent" aria-hidden="true"></span>
+                <span class="redesign-philosophy__eyebrow-text">THE APEX PHILOSOPHY</span>
+              </div>
+
+              <!-- Main Heading -->
+              <h2 class="redesign-philosophy__title">
+                We Don't Just Train Dogs, <span class="redesign-philosophy__title-accent">We Educate Dog Parents</span>
+              </h2>
+
+              <!-- Supporting Paragraph -->
+              <p class="redesign-philosophy__description">
+                Traditional training often relies on suppression and punishment, creating nervous dogs who obey out of fear. At Apex K9, we teach your dog to choose polite behavior willingly through modern behavioral science and clear canine psychology.
+              </p>
+
+              <!-- Three Philosophy Principles Stack (Structured Methodology Cards) -->
+              <div class="redesign-philosophy__principles" role="list">
+                
+                <!-- Principle 1 -->
+                <div class="redesign-philosophy__principle" role="listitem">
+                  <div class="redesign-philosophy__principle-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg>
+                  </div>
+                  <div class="redesign-philosophy__principle-text">
+                    <h3 class="redesign-philosophy__principle-title">Science-Based Positive Reinforcement</h3>
+                    <p class="redesign-philosophy__principle-desc">Least intrusive, minimally aversive methods that build eager cooperation and enthusiastic focus.</p>
+                  </div>
+                  <span class="redesign-philosophy__principle-index" aria-hidden="true">01</span>
+                </div>
+
+                <!-- Principle 2 -->
+                <div class="redesign-philosophy__principle" role="listitem">
+                  <div class="redesign-philosophy__principle-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="redesign-philosophy__principle-text">
+                    <h3 class="redesign-philosophy__principle-title">Real-World Proofing Under Distractions</h3>
+                    <p class="redesign-philosophy__principle-desc">Training doesn't end in a quiet room. We practice reliable manners around bicycles, cats, runners, and everyday street noises.</p>
+                  </div>
+                  <span class="redesign-philosophy__principle-index" aria-hidden="true">02</span>
+                </div>
+
+                <!-- Principle 3 -->
+                <div class="redesign-philosophy__principle" role="listitem">
+                  <div class="redesign-philosophy__principle-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <div class="redesign-philosophy__principle-text">
+                    <h3 class="redesign-philosophy__principle-title">Ongoing Trainer Support &amp; Guidance</h3>
+                    <p class="redesign-philosophy__principle-desc">Get continued guidance, practical refresher sessions, and support to help your dog maintain good habits over time.</p>
+                  </div>
+                  <span class="redesign-philosophy__principle-index" aria-hidden="true">03</span>
+                </div>
+
+              </div>
+
+              <!-- Call to Action Button & Trust Footnote -->
+              <div class="redesign-philosophy__cta-wrapper">
+                <a href="#contact-behaviorist" class="redesign-philosophy__btn" id="philosophyCtaBtn">
+                  <span>Speak With a Head Behaviorist</span>
+                  <svg class="redesign-philosophy__btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <div class="redesign-philosophy__cta-guarantee" aria-label="Consultation note">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Complimentary 20-min consultation &bull; No high-pressure sales</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 3: Training Program Discovery & Path Matcher
+         ========================================================================= -->
+    <section class="redesign-programs" id="programs" aria-label="Find Your Dog's Ideal Training Path">
+      <div class="redesign-programs__container">
+        
+        <!-- Section Introduction (Two-Column Editorial Header) -->
+        <div class="redesign-programs__intro">
+          <div class="redesign-programs__intro-left">
+            <div class="redesign-programs__eyebrow" role="text">
+              <span class="redesign-programs__eyebrow-accent" aria-hidden="true"></span>
+              <span class="redesign-programs__eyebrow-text">TRAINING THAT FITS YOUR DOG</span>
+            </div>
+            <h2 class="redesign-programs__title">
+              Every Dog Is Different. <span class="redesign-programs__title-highlight">Their Training Should Be Too.</span>
+            </h2>
+          </div>
+          <div class="redesign-programs__intro-right">
+            <p class="redesign-programs__description">
+              From puppy foundations to confident everyday manners, discover a training approach built around your dog's age, personality, and goals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Horizontal Training Stage Selector (3 Interactive Editorial Tiles) -->
+        <div class="redesign-programs__stage-selector" role="tablist" aria-label="Select training stage">
+          
+          <!-- Stage 1: Puppy Foundations -->
+          <button 
+            type="button" 
+            class="redesign-programs__stage is-active" 
+            role="tab" 
+            id="stage-tab-puppy" 
+            aria-selected="true" 
+            aria-controls="card-puppy"
+            data-stage="puppy"
+          >
+            <div class="redesign-programs__stage-header">
+              <div class="redesign-programs__stage-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </svg>
+              </div>
+              <span class="redesign-programs__stage-indicator" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="redesign-programs__stage-body">
+              <h3 class="redesign-programs__stage-title">Puppy Foundations</h3>
+              <p class="redesign-programs__stage-subtitle">Build the right habits early</p>
+              <p class="redesign-programs__stage-detail">Socialization, confidence, name response, and essential first commands.</p>
+            </div>
+          </button>
+
+          <!-- Stage 2: Everyday Obedience -->
+          <button 
+            type="button" 
+            class="redesign-programs__stage" 
+            role="tab" 
+            id="stage-tab-obedience" 
+            aria-selected="false" 
+            aria-controls="card-obedience"
+            data-stage="obedience"
+          >
+            <div class="redesign-programs__stage-header">
+              <div class="redesign-programs__stage-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <span class="redesign-programs__stage-indicator" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="redesign-programs__stage-body">
+              <h3 class="redesign-programs__stage-title">Everyday Obedience</h3>
+              <p class="redesign-programs__stage-subtitle">Create calmer daily routines</p>
+              <p class="redesign-programs__stage-detail">Leash manners, recall, impulse control, and polite greetings.</p>
+            </div>
+          </button>
+
+          <!-- Stage 3: Behavior & Confidence -->
+          <button 
+            type="button" 
+            class="redesign-programs__stage" 
+            role="tab" 
+            id="stage-tab-behavior" 
+            aria-selected="false" 
+            aria-controls="card-behavior"
+            data-stage="behavior"
+          >
+            <div class="redesign-programs__stage-header">
+              <div class="redesign-programs__stage-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <span class="redesign-programs__stage-indicator" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="redesign-programs__stage-body">
+              <h3 class="redesign-programs__stage-title">Behavior &amp; Confidence</h3>
+              <p class="redesign-programs__stage-subtitle">Work through challenging behaviors</p>
+              <p class="redesign-programs__stage-detail">Support for reactivity, fear-related challenges, and difficult everyday situations.</p>
+            </div>
+          </button>
+
+        </div>
+
+        <!-- Three Training Program Cards (Responsive Grid) -->
+        <div class="redesign-programs__cards" role="region" aria-label="Available training programs">
+          
+          <!-- Card A: Puppy Essentials -->
+          <article 
+            class="redesign-programs__card is-recommended" 
+            id="card-puppy" 
+            data-card-program="puppy"
+            tabindex="0"
+            role="region"
+            aria-label="Puppy Essentials Program"
+          >
+            <div class="redesign-programs__card-image-wrap">
+              <img 
+                src="assets/images/01(1).jpg" 
+                alt="Golden retriever puppy giving a gentle high-five to a smiling trainer outdoors" 
+                class="redesign-programs__card-image"
+                width="400"
+                height="220"
+                loading="lazy"
+              >
+              <div class="redesign-programs__card-badge" aria-label="Recommended program status">
+                <span class="redesign-programs__card-badge-dot"></span>
+                <span>RECOMMENDED START</span>
+              </div>
+            </div>
+            <div class="redesign-programs__card-content">
+              <div class="redesign-programs__card-eyebrow">START STRONG</div>
+              <h3 class="redesign-programs__card-title">Puppy Essentials</h3>
+              <p class="redesign-programs__card-description">
+                Help your puppy build confidence, learn household routines, and develop the foundations for lifelong good behavior.
+              </p>
+              <div class="redesign-programs__card-highlights">
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Socialization and confidence</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Essential cues and recall</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Toilet and crate routines</span>
+                </div>
+              </div>
+              <div class="redesign-programs__card-action">
+                <button type="button" class="redesign-programs__card-btn" data-select-program="puppy">
+                  <span>Explore Puppy Training</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card B: Complete Obedience -->
+          <article 
+            class="redesign-programs__card" 
+            id="card-obedience" 
+            data-card-program="obedience"
+            tabindex="0"
+            role="region"
+            aria-label="Complete Obedience Program"
+          >
+            <div class="redesign-programs__card-image-wrap">
+              <img 
+                src="assets/images/slide02.jpg" 
+                alt="Alert beagle walking calmly on loose leash with trainer along a park pathway" 
+                class="redesign-programs__card-image"
+                width="400"
+                height="220"
+                loading="lazy"
+              >
+              <div class="redesign-programs__card-badge" aria-label="Recommended program status">
+                <span class="redesign-programs__card-badge-dot"></span>
+                <span>RECOMMENDED START</span>
+              </div>
+            </div>
+            <div class="redesign-programs__card-content">
+              <div class="redesign-programs__card-eyebrow">EVERYDAY MANNERS</div>
+              <h3 class="redesign-programs__card-title">Complete Obedience</h3>
+              <p class="redesign-programs__card-description">
+                Build reliable everyday manners, improve leash walking, and teach your dog to respond calmly in real-world situations.
+              </p>
+              <div class="redesign-programs__card-highlights">
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Loose-leash walking</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Recall and impulse control</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Polite greetings and settling</span>
+                </div>
+              </div>
+              <div class="redesign-programs__card-action">
+                <button type="button" class="redesign-programs__card-btn" data-select-program="obedience">
+                  <span>Explore Obedience</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card C: Behavior Coaching -->
+          <article 
+            class="redesign-programs__card" 
+            id="card-behavior" 
+            data-card-program="behavior"
+            tabindex="0"
+            role="region"
+            aria-label="Behavior Coaching Program"
+          >
+            <div class="redesign-programs__card-image-wrap">
+              <img 
+                src="assets/images/07.jpg" 
+                alt="Gentle, sensitive beagle resting chin on floor, building confidence through positive behavioral guidance" 
+                class="redesign-programs__card-image"
+                width="400"
+                height="220"
+                loading="lazy"
+              >
+              <div class="redesign-programs__card-badge" aria-label="Recommended program status">
+                <span class="redesign-programs__card-badge-dot"></span>
+                <span>RECOMMENDED START</span>
+              </div>
+            </div>
+            <div class="redesign-programs__card-content">
+              <div class="redesign-programs__card-eyebrow">PERSONALIZED SUPPORT</div>
+              <h3 class="redesign-programs__card-title">Behavior Coaching</h3>
+              <p class="redesign-programs__card-description">
+                Get a structured training approach for dogs who struggle with reactivity, fear, confidence, or challenging environments.
+              </p>
+              <div class="redesign-programs__card-highlights">
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Individual behavior assessment</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Gradual, reward-based training</span>
+                </div>
+                <div class="redesign-programs__card-highlight">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Practical owner guidance</span>
+                </div>
+              </div>
+              <div class="redesign-programs__card-action">
+                <button type="button" class="redesign-programs__card-btn" data-select-program="behavior">
+                  <span>Explore Behavior Coaching</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Optional Personalization Matcher Drawer / Control -->
+        <div class="redesign-programs__matcher-box">
+          <div class="redesign-programs__matcher-trigger">
+            <button 
+              type="button" 
+              class="redesign-programs__matcher-toggle" 
+              id="matcherToggleBtn" 
+              aria-expanded="false" 
+              aria-controls="matcherQuestions"
+            >
+              <div class="redesign-programs__matcher-toggle-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <div class="redesign-programs__matcher-toggle-text">
+                <strong>Need a more tailored fit? Personalize your recommendation</strong>
+                <span>Answer 3 quick questions about your dog's age, primary challenge, and preferred learning format.</span>
+              </div>
+              <span class="redesign-programs__matcher-toggle-badge" id="matcherToggleBadge">Customize Match</span>
+              <svg class="redesign-programs__matcher-toggle-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Question Controls (Hidden by default, expands cleanly) -->
+          <div class="redesign-programs__questions is-collapsed" id="matcherQuestions">
+            <div class="redesign-programs__questions-grid">
+              
+              <!-- Question 1 -->
+              <div class="redesign-programs__question">
+                <label for="matchAge" class="redesign-programs__label">
+                  <span class="redesign-programs__label-num">1</span>
+                  <span class="redesign-programs__label-text">Dog's Current Age</span>
+                </label>
+                <div class="redesign-programs__select-wrap">
+                  <select id="matchAge" class="redesign-programs__select">
+                    <option value="puppy" selected>Puppy &mdash; Under 6 months</option>
+                    <option value="adolescent">Adolescent &mdash; 6–18 months</option>
+                    <option value="adult">Adult &mdash; Over 18 months</option>
+                    <option value="senior">Senior dog &mdash; 7+ years</option>
+                  </select>
+                  <svg class="redesign-programs__select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="redesign-programs__question">
+                <label for="matchGoal" class="redesign-programs__label">
+                  <span class="redesign-programs__label-num">2</span>
+                  <span class="redesign-programs__label-text">Primary Training Goal</span>
+                </label>
+                <div class="redesign-programs__select-wrap">
+                  <select id="matchGoal" class="redesign-programs__select">
+                    <option value="confidence" selected>Confidence and socialization</option>
+                    <option value="basic">Basic obedience &amp; commands</option>
+                    <option value="leash">Leash pulling and jumping</option>
+                    <option value="recall">Recall and impulse control</option>
+                    <option value="reactivity">Reactivity or fear-related challenges</option>
+                    <option value="manners">Household manners &amp; calm greeting</option>
+                  </select>
+                  <svg class="redesign-programs__select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="redesign-programs__question">
+                <label for="matchFormat" class="redesign-programs__label">
+                  <span class="redesign-programs__label-num">3</span>
+                  <span class="redesign-programs__label-text">Preferred Training Format</span>
+                </label>
+                <div class="redesign-programs__select-wrap">
+                  <select id="matchFormat" class="redesign-programs__select">
+                    <option value="private" selected>Private in-home training</option>
+                    <option value="group">Small-group classes</option>
+                    <option value="structured">Structured multi-week program</option>
+                  </select>
+                  <svg class="redesign-programs__select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Personalized Recommendation Panel (Light Luxury Surface) -->
+        <div class="redesign-programs__recommendation" role="region" aria-label="Your Suggested Training Path">
+          <div class="redesign-programs__rec-inner">
+            <div class="redesign-programs__rec-main" aria-live="polite">
+              <div class="redesign-programs__rec-eyebrow">YOUR SUGGESTED STARTING POINT</div>
+              <h3 class="redesign-programs__rec-title" id="recProgramTitle">Puppy Essentials</h3>
+              <p class="redesign-programs__rec-desc" id="recProgramDesc">
+                Because your puppy is under 6 months, building early socialization, gentle bite inhibition, and calm household routines now will prevent future behavioral issues and build lifelong trust.
+              </p>
+              <div class="redesign-programs__rec-tags" id="recTags" aria-label="Selected preferences summary">
+                <span class="redesign-programs__rec-tag" id="recTagStage">Stage: Under 6 Months</span>
+                <span class="redesign-programs__rec-tag" id="recTagGoal">Goal: Confidence &amp; Socialization</span>
+                <span class="redesign-programs__rec-tag" id="recTagFormat">Format: Private In-Home</span>
+              </div>
+              <p class="redesign-programs__rec-disclaimer">
+                * This curriculum recommendation is an educational starting point based on positive reinforcement principles, not a clinical behavioral diagnosis.
+              </p>
+            </div>
+            
+            <div class="redesign-programs__rec-actions">
+              <button type="button" class="redesign-programs__rec-cta" id="recCtaBtn">
+                <span>Discuss My Training Plan</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <button type="button" class="redesign-programs__rec-secondary" id="recRefineBtn">
+                <span>Change My Answers</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Accessible Consultation Booking Dialog -->
+      <dialog class="redesign-programs__modal" id="programModal" aria-labelledby="modalTitle">
+        <div class="redesign-programs__modal-box">
+          <button type="button" class="redesign-programs__modal-close" id="modalCloseBtn" aria-label="Close dialog">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          <div class="redesign-programs__modal-header">
+            <span class="redesign-programs__modal-eyebrow">CURRICULUM INQUIRY</span>
+            <h3 class="redesign-programs__modal-title" id="modalTitle">Discuss Your Dog's Training Path</h3>
+            <p class="redesign-programs__modal-subtitle" id="modalSubtitle">
+              You selected the <strong id="modalProgramName">Puppy Essentials</strong> program. Our head behaviorist is ready to answer your questions and plan your custom curriculum.
+            </p>
+          </div>
+          <div class="redesign-programs__modal-summary" id="modalSummary">
+            <!-- Dynamic summary populated by JS -->
+          </div>
+          <div class="redesign-programs__modal-actions">
+            <a href="tel:5550192834" class="redesign-programs__modal-btn redesign-programs__modal-btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call Behaviorist: (555) 019-2834</span>
+            </a>
+            <button type="button" class="redesign-programs__modal-btn redesign-programs__modal-btn--secondary" id="modalDismissBtn">
+              <span>Back to Program Overview</span>
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: Comprehensive Training Programs — Editorial Showcase & Navigator
+         ========================================================================= -->
+    <section class="redesign-training" id="training" aria-labelledby="trainingHeading">
+      <div class="redesign-training__container">
+
+        <!-- Section Introduction (Two-Column Editorial on Desktop) -->
+        <header class="redesign-training__intro">
+          <div class="redesign-training__intro-left">
+            <span class="redesign-training__eyebrow" id="trainingEyebrow">TRAINING FOR REAL LIFE</span>
+            <h2 class="redesign-training__heading" id="trainingHeading">
+              The Right Training. <span class="redesign-training__heading-highlight">A Better Life Together.</span>
+            </h2>
+          </div>
+          <div class="redesign-training__intro-right">
+            <p class="redesign-training__description">
+              From a puppy's first lessons to advanced working-dog skills, discover practical, reward-based training designed around your dog's needs and your everyday life.
+            </p>
+          </div>
+        </header>
+
+        <!-- Understated Category Filter Bar -->
+        <div class="redesign-training__filter-bar" role="toolbar" aria-label="Program category filters">
+          <span class="redesign-training__filter-label">Filter Curriculums:</span>
+          <div class="redesign-training__filter-group" role="tablist" aria-label="Curriculum categories">
+            <button type="button" class="redesign-training__filter-btn is-active" data-filter="all" role="tab" aria-selected="true" id="filter-all">
+              <span>All Programs</span>
+              <span class="redesign-training__filter-count">6</span>
+            </button>
+            <button type="button" class="redesign-training__filter-btn" data-filter="puppy" role="tab" aria-selected="false" id="filter-puppy">
+              <span>Puppy &amp; Foundations</span>
+              <span class="redesign-training__filter-count">1</span>
+            </button>
+            <button type="button" class="redesign-training__filter-btn" data-filter="obedience" role="tab" aria-selected="false" id="filter-obedience">
+              <span>Obedience</span>
+              <span class="redesign-training__filter-count">2</span>
+            </button>
+            <button type="button" class="redesign-training__filter-btn" data-filter="behavior" role="tab" aria-selected="false" id="filter-behavior">
+              <span>Behavior Support</span>
+              <span class="redesign-training__filter-count">1</span>
+            </button>
+            <button type="button" class="redesign-training__filter-btn" data-filter="advanced" role="tab" aria-selected="false" id="filter-advanced">
+              <span>Advanced Training</span>
+              <span class="redesign-training__filter-count">2</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Featured Program Showcase (Large Asymmetrical Hero Panel) -->
+        <article class="redesign-training__featured" id="trainingFeaturedCard" aria-labelledby="featuredTitle">
+          <div class="redesign-training__featured-media">
+            <img 
+              src="assets/images/02(1).jpg" 
+              alt="Young husky puppy practicing calm indoor play and bite inhibition on rug" 
+              class="redesign-training__featured-img" 
+              id="featuredImage"
+              loading="lazy"
+            >
+            <div class="redesign-training__featured-badges">
+              <span class="redesign-training__badge redesign-training__badge--cat" id="featuredBadgeCategory">PUPPY FOUNDATIONS</span>
+              <span class="redesign-training__badge redesign-training__badge--duration" id="featuredBadgeDuration">4 WEEKS</span>
+            </div>
+          </div>
+
+          <div class="redesign-training__featured-content">
+            <div class="redesign-training__featured-header">
+              <div class="redesign-training__featured-meta">
+                <span class="redesign-training__featured-category" id="featuredMetaCategory">PUPPY FOUNDATIONS</span>
+                <span class="redesign-training__featured-meta-dot" aria-hidden="true">&bull;</span>
+                <span class="redesign-training__featured-duration" id="featuredMetaDuration">4-Week Program</span>
+              </div>
+              <div class="redesign-training__featured-pricing">
+                <span class="redesign-training__featured-price-label">Program Fee</span>
+                <span class="redesign-training__featured-price-val" id="featuredPrice">$349</span>
+              </div>
+            </div>
+
+            <h3 class="redesign-training__featured-title" id="featuredTitle">Puppy Kindergarten &amp; Foundation</h3>
+            <p class="redesign-training__featured-desc" id="featuredDesc">
+              Set your puppy up for a lifetime of good manners before bad habits take root. Build confidence, establish everyday routines, and develop the foundations for reliable behavior.
+            </p>
+
+            <div class="redesign-training__featured-benefits-wrapper">
+              <h4 class="redesign-training__featured-benefits-title">Core Program Highlights</h4>
+              <ul class="redesign-training__featured-benefits" id="featuredBenefitsList">
+                <li class="redesign-training__featured-benefit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Potty training and crate routines</span>
+                </li>
+                <li class="redesign-training__featured-benefit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Teething, chewing, and bite inhibition</span>
+                </li>
+                <li class="redesign-training__featured-benefit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Safe exposure and sound desensitization</span>
+                </li>
+                <li class="redesign-training__featured-benefit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Loose-leash walking fundamentals</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="redesign-training__featured-actions">
+              <button type="button" class="redesign-training__cta-btn" id="featuredCtaBtn" data-training-action="inquire">
+                <span id="featuredCtaText">Explore Puppy Program</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <button type="button" class="redesign-training__quick-btn" id="featuredQuickBtn" data-training-action="syllabus">
+                <span>View Full Curriculum Outline</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Structured Editorial List / Navigator -->
+        <div class="redesign-training__navigator">
+          <div class="redesign-training__navigator-header">
+            <div class="redesign-training__navigator-intro">
+              <span class="redesign-training__navigator-eyebrow">ACADEMY CURRICULUM DIRECTORY</span>
+              <h3 class="redesign-training__navigator-title">Compare All 6 Academy Programs</h3>
+              <p class="redesign-training__navigator-sub">
+                Select any program below to view its complete curriculum breakdown, pricing, and key milestones in the showcase above.
+              </p>
+            </div>
+            <div class="redesign-training__navigator-hint" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Click or navigate with keyboard</span>
+            </div>
+          </div>
+
+          <div class="redesign-training__list" role="listbox" aria-label="Training programs list" id="trainingProgramList">
+            
+            <!-- Program Row 1 -->
+            <div 
+              class="redesign-training__item is-active" 
+              role="option" 
+              aria-selected="true" 
+              tabindex="0" 
+              data-program-id="puppy-kindergarten"
+              data-category="puppy"
+              id="prog-opt-1"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">01</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/02(1).jpg" alt="Puppy kindergarten indoor play" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">PUPPY FOUNDATIONS</span>
+                  <span class="redesign-training__item-duration">4 Weeks</span>
+                </div>
+                <h4 class="redesign-training__item-title">Puppy Kindergarten &amp; Foundation</h4>
+                <p class="redesign-training__item-desc">Set your puppy up for a lifetime of good manners before bad habits take root.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">Fee</span>
+                  <span class="redesign-training__item-price-val">$349</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Featured</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Row 2 -->
+            <div 
+              class="redesign-training__item" 
+              role="option" 
+              aria-selected="false" 
+              tabindex="0" 
+              data-program-id="everyday-obedience"
+              data-category="obedience"
+              id="prog-opt-2"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">02</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/01(2).jpg" alt="Trained dog sitting with owner outdoors" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">EVERYDAY OBEDIENCE</span>
+                  <span class="redesign-training__item-duration">5 Weeks</span>
+                </div>
+                <h4 class="redesign-training__item-title">On-Leash &amp; Off-Leash Obedience</h4>
+                <p class="redesign-training__item-desc">Transform your walking routine with reliable sit, stay, heel, down, and recall skills.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">Fee</span>
+                  <span class="redesign-training__item-price-val">$499</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Select</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Row 3 -->
+            <div 
+              class="redesign-training__item" 
+              role="option" 
+              aria-selected="false" 
+              tabindex="0" 
+              data-program-id="behavior-rehab"
+              data-category="behavior"
+              id="prog-opt-3"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">03</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/19.jpg" alt="Gentle positive behavior desensitization coaching" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">SPECIALIST SUPPORT</span>
+                  <span class="redesign-training__item-duration">6 Weeks</span>
+                </div>
+                <h4 class="redesign-training__item-title">Behavior Rehab &amp; Reactivity</h4>
+                <p class="redesign-training__item-desc">Structured support for dogs experiencing reactivity, fear challenges, or separation anxiety.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">Fee</span>
+                  <span class="redesign-training__item-price-val">$680</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Select</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Row 4 -->
+            <div 
+              class="redesign-training__item" 
+              role="option" 
+              aria-selected="false" 
+              tabindex="0" 
+              data-program-id="k9-agility"
+              data-category="advanced"
+              id="prog-opt-4"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">04</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/03(1).jpg" alt="Agile dog leaping joyfully during athletic training" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">ATHLETIC CONDITIONING</span>
+                  <span class="redesign-training__item-duration">4 Weeks</span>
+                </div>
+                <h4 class="redesign-training__item-title">K9 Agility &amp; Sport Obstacles</h4>
+                <p class="redesign-training__item-desc">Channel your dog's energy through agility foundations, obstacle work, and focused movement.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">Fee</span>
+                  <span class="redesign-training__item-price-val">$380</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Select</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Row 5 -->
+            <div 
+              class="redesign-training__item" 
+              role="option" 
+              aria-selected="false" 
+              tabindex="0" 
+              data-program-id="board-train"
+              data-category="obedience"
+              id="prog-opt-5"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">05</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/slide03.jpg" alt="Calm dog settled comfortably on sofa during residential immersion" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">IMMERSIVE TRAINING</span>
+                  <span class="redesign-training__item-duration">2–3 Weeks</span>
+                </div>
+                <h4 class="redesign-training__item-title">Elite Board &amp; Train Immersion</h4>
+                <p class="redesign-training__item-desc">Structured residential option for owners seeking intensive sessions and handler coaching.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">From</span>
+                  <span class="redesign-training__item-price-val">$1,450</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Select</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Program Row 6 -->
+            <div 
+              class="redesign-training__item" 
+              role="option" 
+              aria-selected="false" 
+              tabindex="0" 
+              data-program-id="working-k9"
+              data-category="advanced"
+              id="prog-opt-6"
+            >
+              <div class="redesign-training__item-indicator" aria-hidden="true"></div>
+              <span class="redesign-training__item-num">06</span>
+              <div class="redesign-training__item-thumb">
+                <img src="assets/images/05(2).jpg" alt="Working dog delivering retrieve item to handler's hand" loading="lazy">
+              </div>
+              <div class="redesign-training__item-body">
+                <div class="redesign-training__item-tags">
+                  <span class="redesign-training__item-tag">ADVANCED WORKING DOG</span>
+                  <span class="redesign-training__item-duration">Custom</span>
+                </div>
+                <h4 class="redesign-training__item-title">Working K9, Scent &amp; Protection</h4>
+                <p class="redesign-training__item-desc">Specialized working-dog development focused on scent tasks, obedience, and handler communication.</p>
+              </div>
+              <div class="redesign-training__item-meta">
+                <div class="redesign-training__item-price">
+                  <span class="redesign-training__item-price-label">Evaluation</span>
+                  <span class="redesign-training__item-price-val">Custom</span>
+                </div>
+                <div class="redesign-training__item-cta" aria-hidden="true">
+                  <span class="redesign-training__item-cta-text">Select</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Accessible Inquiry Modal for Training Programs -->
+        <dialog class="redesign-training__modal" id="trainingInquiryModal" aria-labelledby="trainingModalTitle">
+          <div class="redesign-training__modal-box">
+            <button type="button" class="redesign-training__modal-close" id="trainingModalCloseBtn" aria-label="Close dialog">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="redesign-training__modal-header">
+              <span class="redesign-training__modal-eyebrow" id="trainingModalEyebrow">CURRICULUM INQUIRY</span>
+              <h3 class="redesign-training__modal-title" id="trainingModalTitle">Explore Program Details</h3>
+              <p class="redesign-training__modal-desc" id="trainingModalDesc">
+                Connect with our certified training staff to discuss curriculum milestones, trainer availability, and tailor a custom schedule for your dog.
+              </p>
+            </div>
+            <div class="redesign-training__modal-details" id="trainingModalDetails">
+              <!-- Dynamically populated via JS -->
+            </div>
+            <div class="redesign-training__modal-actions">
+              <a href="tel:5550192834" class="redesign-training__modal-btn redesign-training__modal-btn--primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Call Behaviorist: (555) 019-2834</span>
+              </a>
+              <button type="button" class="redesign-training__modal-btn redesign-training__modal-btn--secondary" id="trainingModalDismissBtn">
+                <span>Back to Programs</span>
+              </button>
+            </div>
+          </div>
+        </dialog>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: Stories Beyond the Leash — Editorial Transformations & Gallery
+         ========================================================================= -->
+    <section class="redesign-stories" id="gallery" aria-labelledby="storiesHeading">
+      <div class="redesign-stories__container">
+
+        <!-- 1. Section Introduction (Two-Column Asymmetrical Layout) -->
+        <header class="redesign-stories__intro">
+          <div class="redesign-stories__intro-left">
+            <span class="redesign-stories__eyebrow" id="storiesEyebrow">LIFE BEYOND THE LEASH</span>
+            <h2 class="redesign-stories__heading" id="storiesHeading">
+              Little Victories. <span class="redesign-stories__heading-highlight">Lasting Connections.</span>
+            </h2>
+          </div>
+          <div class="redesign-stories__intro-right">
+            <p class="redesign-stories__description">
+              Every confident recall, calmer walk, and moment of trust represents progress. Explore snapshots of the everyday experiences that make training meaningful for dogs and their people.
+            </p>
+          </div>
+        </header>
+
+        <!-- 2. Featured Story Showcase with Integrated Story Selector -->
+        <div class="redesign-stories__featured-grid">
+          
+          <!-- Left: Large Featured Image -->
+          <div class="redesign-stories__featured-media">
+            <div class="redesign-stories__featured-frame">
+              <img 
+                src="assets/images/05(1).jpg" 
+                alt="Golden retriever sharing an affectionate moment with owner during outdoor sunset session" 
+                class="redesign-stories__featured-img" 
+                id="storyFeaturedImg"
+                loading="eager"
+              >
+              <div class="redesign-stories__featured-tag" id="storyFeaturedTag">
+                <span class="redesign-stories__tag-dot" aria-hidden="true"></span>
+                <span id="storyFeaturedTagText">PUPPY FOUNDATIONS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Story Narrative & Integrated Category Selector -->
+          <div class="redesign-stories__featured-content">
+            
+            <div class="redesign-stories__narrative" id="storyNarrativeBox">
+              <span class="redesign-stories__cat-badge" id="storyCatBadge">PUPPY FOUNDATIONS</span>
+              <h3 class="redesign-stories__story-title" id="storyTitle">Confidence Starts With the Smallest Steps</h3>
+              <p class="redesign-stories__story-desc" id="storyDesc">
+                Early experiences help puppies become more comfortable with people, new environments, everyday sounds, and the routines that shape their future behavior.
+              </p>
+              
+              <!-- 3 Training-Focus Labels -->
+              <div class="redesign-stories__focus-pills" id="storyFocusPills" aria-label="Key training milestones">
+                <span class="redesign-stories__focus-pill">Confidence building</span>
+                <span class="redesign-stories__focus-pill">Positive reinforcement</span>
+                <span class="redesign-stories__focus-pill">Everyday foundations</span>
+              </div>
+
+              <div class="redesign-stories__narrative-action">
+                <a href="#training" class="redesign-stories__btn-primary">
+                  <span>Explore Our Training Approach</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Story Selector (Editorial List) -->
+            <div class="redesign-stories__selector-wrap">
+              <span class="redesign-stories__selector-eyebrow">EXPLORE FEATURED MOMENTS</span>
+              <div class="redesign-stories__selector" role="tablist" aria-label="Transformation story categories">
+                
+                <!-- Story 01 -->
+                <button 
+                  type="button" 
+                  class="redesign-stories__selector-item is-active" 
+                  role="tab" 
+                  aria-selected="true" 
+                  data-story-id="puppy-foundations"
+                  id="tab-story-1"
+                >
+                  <span class="redesign-stories__item-num">01</span>
+                  <div class="redesign-stories__item-info">
+                    <strong class="redesign-stories__item-title">Puppy Foundations</strong>
+                    <span class="redesign-stories__item-sub">Confidence, socialization, and first lessons.</span>
+                  </div>
+                  <svg class="redesign-stories__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+                <!-- Story 02 -->
+                <button 
+                  type="button" 
+                  class="redesign-stories__selector-item" 
+                  role="tab" 
+                  aria-selected="false" 
+                  data-story-id="everyday-obedience"
+                  id="tab-story-2"
+                >
+                  <span class="redesign-stories__item-num">02</span>
+                  <div class="redesign-stories__item-info">
+                    <strong class="redesign-stories__item-title">Everyday Obedience</strong>
+                    <span class="redesign-stories__item-sub">Calmer walks, reliable cues, and better routines.</span>
+                  </div>
+                  <svg class="redesign-stories__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+                <!-- Story 03 -->
+                <button 
+                  type="button" 
+                  class="redesign-stories__selector-item" 
+                  role="tab" 
+                  aria-selected="false" 
+                  data-story-id="agility-play"
+                  id="tab-story-3"
+                >
+                  <span class="redesign-stories__item-num">03</span>
+                  <div class="redesign-stories__item-info">
+                    <strong class="redesign-stories__item-title">Agility &amp; Play</strong>
+                    <span class="redesign-stories__item-sub">Movement, enrichment, and focused engagement.</span>
+                  </div>
+                  <svg class="redesign-stories__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+                <!-- Story 04 -->
+                <button 
+                  type="button" 
+                  class="redesign-stories__selector-item" 
+                  role="tab" 
+                  aria-selected="false" 
+                  data-story-id="trust-connection"
+                  id="tab-story-4"
+                >
+                  <span class="redesign-stories__item-num">04</span>
+                  <div class="redesign-stories__item-info">
+                    <strong class="redesign-stories__item-title">Trust &amp; Connection</strong>
+                    <span class="redesign-stories__item-sub">Positive interactions and stronger relationships.</span>
+                  </div>
+                  <svg class="redesign-stories__item-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3. Supporting Curated Photo Collection (Asymmetrical Editorial Grid) -->
+        <div class="redesign-stories__supporting">
+          <div class="redesign-stories__supporting-header">
+            <div>
+              <span class="redesign-stories__supporting-eyebrow">CURATED MOMENTS</span>
+              <h3 class="redesign-stories__supporting-title">Glimpses From the Academy Field</h3>
+            </div>
+            <p class="redesign-stories__supporting-note">
+              Click any photograph to view the full resolution snapshot and training background.
+            </p>
+          </div>
+
+          <div class="redesign-stories__mosaic">
+            
+            <!-- Photo 1: Medium Landscape 4:3 -->
+            <figure 
+              class="redesign-stories__card redesign-stories__card--med-land" 
+              tabindex="0" 
+              role="button" 
+              aria-label="View photograph: Jack Russell Terrier resting attentively beside remote worker"
+              data-lightbox-src="assets/images/04(1).jpg"
+              data-lightbox-title="Workplace Settle &amp; Household Harmony"
+              data-lightbox-tag="HOUSEHOLD MANNERS"
+              data-lightbox-desc="Teaching dogs a reliable 'settle' command while owners work on laptops from home."
+            >
+              <div class="redesign-stories__card-media">
+                <img src="assets/images/04(1).jpg" alt="Jack Russell Terrier calmly observing owner typing on laptop" loading="lazy">
+                <div class="redesign-stories__card-zoom" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                </div>
+              </div>
+              <figcaption class="redesign-stories__card-caption">
+                <span class="redesign-stories__card-tag">ROUTINE</span>
+                <span class="redesign-stories__card-label">The In-Home Settle Routine</span>
+              </figcaption>
+            </figure>
+
+            <!-- Photo 2: Portrait 3:4 -->
+            <figure 
+              class="redesign-stories__card redesign-stories__card--portrait" 
+              tabindex="0" 
+              role="button" 
+              aria-label="View photograph: Happy Border Collie running joyfully during outdoor recall session"
+              data-lightbox-src="assets/images/mosaic_recall.jpg"
+              data-lightbox-title="Enthusiastic Outdoor Recall"
+              data-lightbox-tag="OPEN-AIR RECALL"
+              data-lightbox-desc="Building rapid, enthusiastic recall across open spaces with joyful positive reinforcement."
+            >
+              <div class="redesign-stories__card-media">
+                <img src="assets/images/mosaic_recall.jpg" alt="Happy Border Collie running joyfully during outdoor recall training session on green grass" loading="lazy">
+                <div class="redesign-stories__card-zoom" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                </div>
+              </div>
+              <figcaption class="redesign-stories__card-caption">
+                <span class="redesign-stories__card-tag">RECALL</span>
+                <span class="redesign-stories__card-label">Reliable Open-Field Response</span>
+              </figcaption>
+            </figure>
+
+            <!-- Photo 3: Wide Landscape 16:9 -->
+            <figure 
+              class="redesign-stories__card redesign-stories__card--wide" 
+              tabindex="0" 
+              role="button" 
+              aria-label="View photograph: Athletic Golden Retriever jumping gracefully over agility hurdle"
+              data-lightbox-src="assets/images/mosaic_agility.jpg"
+              data-lightbox-title="Obstacle Conditioning &amp; Focus"
+              data-lightbox-tag="AGILITY &amp; SPORT"
+              data-lightbox-desc="Channeling natural canine athleticism into precise, confident movement and obstacle mastery."
+            >
+              <div class="redesign-stories__card-media">
+                <img src="assets/images/mosaic_agility.jpg" alt="Athletic Golden Retriever jumping gracefully over an agility hurdle on green field" loading="lazy">
+                <div class="redesign-stories__card-zoom" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                </div>
+              </div>
+              <figcaption class="redesign-stories__card-caption">
+                <span class="redesign-stories__card-tag">AGILITY</span>
+                <span class="redesign-stories__card-label">Confidence Over Obstacles</span>
+              </figcaption>
+            </figure>
+
+            <!-- Photo 4: Medium Landscape 4:3 -->
+            <figure 
+              class="redesign-stories__card redesign-stories__card--med-right" 
+              tabindex="0" 
+              role="button" 
+              aria-label="View photograph: Mother and child smiling while petting their calm golden retriever"
+              data-lightbox-src="assets/images/mosaic_family.jpg"
+              data-lightbox-title="Calm Family Companionship"
+              data-lightbox-tag="FAMILY DOG"
+              data-lightbox-desc="Nurturing gentle interactions, household calmness, and affectionate bonds with children."
+            >
+              <div class="redesign-stories__card-media">
+                <img src="assets/images/mosaic_family.jpg" alt="Mother and daughter laughing while petting their calm, well-behaved golden retriever in sunny park" loading="lazy">
+                <div class="redesign-stories__card-zoom" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                </div>
+              </div>
+              <figcaption class="redesign-stories__card-caption">
+                <span class="redesign-stories__card-tag">FAMILY DOG</span>
+                <span class="redesign-stories__card-label">Gentle Child Integration</span>
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <!-- 4. Closing CTA Section -->
+        <div class="redesign-stories__closing">
+          <div class="redesign-stories__closing-content">
+            <h3 class="redesign-stories__closing-title">Every Great Partnership Starts With One Step.</h3>
+            <p class="redesign-stories__closing-desc">
+              Discover a training approach designed around your dog, your goals, and everyday life together.
+            </p>
+          </div>
+          <div class="redesign-stories__closing-action">
+            <a href="#assessment" class="redesign-stories__btn-cta" id="storiesBookAssessment">
+              <span>Book a Free Assessment</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Accessible Lightbox Modal for Supporting Photos -->
+      <dialog class="redesign-stories__lightbox" id="storiesLightboxModal" aria-labelledby="lightboxTitle">
+        <div class="redesign-stories__lightbox-box">
+          <button type="button" class="redesign-stories__lightbox-close" id="lightboxCloseBtn" aria-label="Close photo preview">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          
+          <div class="redesign-stories__lightbox-media">
+            <img src="assets/images/04(1).jpg" alt="Workplace Settle" id="lightboxImg">
+          </div>
+          
+          <div class="redesign-stories__lightbox-footer">
+            <span class="redesign-stories__lightbox-tag" id="lightboxTag">HOUSEHOLD MANNERS</span>
+            <h4 class="redesign-stories__lightbox-title" id="lightboxTitle">Workplace Settle &amp; Household Harmony</h4>
+            <p class="redesign-stories__lightbox-desc" id="lightboxDesc">
+              Teaching dogs a reliable 'settle' command while owners work on laptops from home.
+            </p>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: Transparent Training Packages — Investment Planner & Comparison
+         ========================================================================= -->
+    <section class="redesign-pricing" id="pricing" aria-labelledby="pricingHeading">
+      <div class="redesign-pricing__container">
+
+        <!-- 1. Left-Aligned Editorial Section Header -->
+        <header class="redesign-pricing__intro">
+          <div class="redesign-pricing__intro-left">
+            <span class="redesign-pricing__eyebrow" id="pricingEyebrow">INVEST IN A BETTER PARTNERSHIP</span>
+            <h2 class="redesign-pricing__heading" id="pricingHeading">
+              Training That Fits Your Dog. <span class="redesign-pricing__heading-highlight">Value You Can Understand.</span>
+            </h2>
+          </div>
+          <div class="redesign-pricing__intro-right">
+            <p class="redesign-pricing__description">
+              Every dog starts from a different place. Compare our training options, understand what's included, and choose the level of support that best matches your dog's needs.
+            </p>
+          </div>
+        </header>
+
+        <!-- 2. Main Package Selector & Dynamic Details Layout -->
+        <div class="redesign-pricing__layout">
+          
+          <!-- Left Column: Vertical Package Selector (32-36%) -->
+          <aside class="redesign-pricing__selector" role="tablist" aria-label="Training packages">
+            <div class="redesign-pricing__selector-label">
+              <span>SELECT A PACKAGE TO INSPECT</span>
+            </div>
+
+            <!-- Package A: Puppy Starter -->
+            <button 
+              type="button" 
+              class="redesign-pricing__option" 
+              role="tab" 
+              aria-selected="false" 
+              data-package-id="puppy-starter"
+              id="tab-pkg-puppy"
+            >
+              <div class="redesign-pricing__option-indicator" aria-hidden="true"></div>
+              <div class="redesign-pricing__option-header">
+                <span class="redesign-pricing__option-cat">EARLY FOUNDATIONS</span>
+                <span class="redesign-pricing__option-price">$349</span>
+              </div>
+              <h3 class="redesign-pricing__option-title">Puppy Starter</h3>
+              <p class="redesign-pricing__option-desc">Build healthy habits during your puppy's earliest learning stages.</p>
+              <div class="redesign-pricing__option-meta">
+                <span class="redesign-pricing__option-tag">4 Sessions</span>
+                <span class="redesign-pricing__option-sub">Under 6 Months</span>
+              </div>
+            </button>
+
+            <!-- Package B: Complete K9 Obedience (Default selected) -->
+            <button 
+              type="button" 
+              class="redesign-pricing__option is-active" 
+              role="tab" 
+              aria-selected="true" 
+              data-package-id="complete-obedience"
+              id="tab-pkg-obedience"
+            >
+              <div class="redesign-pricing__option-indicator" aria-hidden="true"></div>
+              <div class="redesign-pricing__option-header">
+                <span class="redesign-pricing__option-cat">EVERYDAY OBEDIENCE</span>
+                <span class="redesign-pricing__option-price">$599</span>
+              </div>
+              <div class="redesign-pricing__option-title-row">
+                <h3 class="redesign-pricing__option-title">Complete K9 Obedience</h3>
+                <span class="redesign-pricing__popular-badge">Popular Option</span>
+              </div>
+              <p class="redesign-pricing__option-desc">Develop reliable everyday manners, better leash behavior, and practical obedience.</p>
+              <div class="redesign-pricing__option-meta">
+                <span class="redesign-pricing__option-tag">6 Sessions</span>
+                <span class="redesign-pricing__option-sub">Park Practice &amp; Leash</span>
+              </div>
+            </button>
+
+            <!-- Package C: Behavioral Bootcamp -->
+            <button 
+              type="button" 
+              class="redesign-pricing__option" 
+              role="tab" 
+              aria-selected="false" 
+              data-package-id="behavioral-bootcamp"
+              id="tab-pkg-bootcamp"
+            >
+              <div class="redesign-pricing__option-indicator" aria-hidden="true"></div>
+              <div class="redesign-pricing__option-header">
+                <span class="redesign-pricing__option-cat">SPECIALIST SUPPORT</span>
+                <span class="redesign-pricing__option-price">$849</span>
+              </div>
+              <h3 class="redesign-pricing__option-title">Behavioral Bootcamp</h3>
+              <p class="redesign-pricing__option-desc">A structured training option for more challenging behavioral goals requiring individualized support.</p>
+              <div class="redesign-pricing__option-meta">
+                <span class="redesign-pricing__option-tag">8 Sessions</span>
+                <span class="redesign-pricing__option-sub">Specialist Support</span>
+              </div>
+            </button>
+          </aside>
+
+          <!-- Right Column: Dynamic Package Details Panel -->
+          <article class="redesign-pricing__details" id="pricingDetailsPanel" aria-labelledby="pricingDetailsTitle">
+            
+            <!-- Panel Header -->
+            <div class="redesign-pricing__details-header">
+              <div class="redesign-pricing__details-meta">
+                <span class="redesign-pricing__details-cat" id="detailsCat">EVERYDAY OBEDIENCE</span>
+                <span class="redesign-pricing__details-dot" aria-hidden="true">&bull;</span>
+                <span class="redesign-pricing__details-sessions" id="detailsSessions">6 In-Depth Private Sessions</span>
+              </div>
+              <h3 class="redesign-pricing__details-title" id="pricingDetailsTitle">Complete K9 Obedience</h3>
+              <p class="redesign-pricing__details-desc" id="detailsDesc">
+                Develop reliable everyday manners, better leash behavior, and practical obedience that holds up in real-world environments.
+              </p>
+            </div>
+
+            <!-- Features Included List -->
+            <div class="redesign-pricing__features-wrap">
+              <h4 class="redesign-pricing__features-heading">What's Included</h4>
+              <ul class="redesign-pricing__features-list" id="detailsIncludedList">
+                <!-- Dynamically populated via JS -->
+              </ul>
+            </div>
+
+            <!-- Excluded items wrapper (Shown only when package has exclusions) -->
+            <div class="redesign-pricing__excluded-wrap is-hidden" id="detailsExcludedBox">
+              <h5 class="redesign-pricing__excluded-heading">Not Included in This Package</h5>
+              <ul class="redesign-pricing__excluded-list" id="detailsExcludedList">
+                <!-- Dynamically populated via JS if applicable -->
+              </ul>
+            </div>
+
+            <!-- Pricing & Action Footer -->
+            <div class="redesign-pricing__details-footer">
+              <div class="redesign-pricing__price-block">
+                <div class="redesign-pricing__price-main">
+                  <span class="redesign-pricing__currency">$</span>
+                  <span class="redesign-pricing__amount" id="detailsAmount">599</span>
+                </div>
+                <div class="redesign-pricing__billing">
+                  <span class="redesign-pricing__billing-label" id="detailsBilling">per course</span>
+                  <span class="redesign-pricing__guarantee">No hidden fees &bull; Transparent support</span>
+                </div>
+              </div>
+
+              <div class="redesign-pricing__actions">
+                <button type="button" class="redesign-pricing__btn-primary" id="pricingPrimaryCta">
+                  <span id="pricingCtaLabel">Discuss This Package</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="#pricingComparison" class="redesign-pricing__btn-secondary" id="pricingCompareLink">
+                  <span>Compare Packages</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- 3. Compact Package Summary -->
+        <div class="redesign-pricing__summary" role="region" aria-label="Selected package summary">
+          <div class="redesign-pricing__summary-inner">
+            <div class="redesign-pricing__summary-info">
+              <span class="redesign-pricing__summary-eyebrow">YOUR CURRENT SELECTION</span>
+              <div class="redesign-pricing__summary-row">
+                <strong class="redesign-pricing__summary-name" id="summaryPkgName">Complete K9 Obedience</strong>
+                <span class="redesign-pricing__summary-price" id="summaryPkgPrice">$599 per course</span>
+              </div>
+              <p class="redesign-pricing__summary-desc" id="summaryPkgDesc">
+                Best suited for adolescents and adult dogs needing loose-leash walking, dependable commands, and real-world manners.
+              </p>
+            </div>
+            <div class="redesign-pricing__summary-action">
+              <button type="button" class="redesign-pricing__summary-btn" id="summaryActionBtn">
+                <span>Continue With This Package</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Package Comparison Section (Responsive Table) -->
+        <div class="redesign-pricing__comparison" id="pricingComparison">
+          <div class="redesign-pricing__comparison-header">
+            <div>
+              <span class="redesign-pricing__comparison-eyebrow">CLEAR AT-A-GLANCE BREAKDOWN</span>
+              <h3 class="redesign-pricing__comparison-title">Compare Your Training Options</h3>
+            </div>
+            <p class="redesign-pricing__comparison-sub">
+              A quick overview of how each package supports different training needs.
+            </p>
+          </div>
+
+          <div class="redesign-pricing__table-container" tabindex="0" role="region" aria-label="Package comparison table">
+            <table class="redesign-pricing__table">
+              <thead>
+                <tr>
+                  <th scope="col" class="redesign-pricing__th-feature">Package Features</th>
+                  <th scope="col" class="redesign-pricing__th-col" id="col-puppy">
+                    <span class="redesign-pricing__col-name">Puppy Starter</span>
+                    <span class="redesign-pricing__col-price">$349</span>
+                  </th>
+                  <th scope="col" class="redesign-pricing__th-col redesign-pricing__th-col--highlight" id="col-obedience">
+                    <div class="redesign-pricing__col-tag">POPULAR CHOICE</div>
+                    <span class="redesign-pricing__col-name">Complete K9 Obedience</span>
+                    <span class="redesign-pricing__col-price">$599</span>
+                  </th>
+                  <th scope="col" class="redesign-pricing__th-col" id="col-bootcamp">
+                    <span class="redesign-pricing__col-name">Behavioral Bootcamp</span>
+                    <span class="redesign-pricing__col-price">$849</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Course Price</th>
+                  <td>$349</td>
+                  <td class="redesign-pricing__td--highlight">$599</td>
+                  <td>$849</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Private Training Sessions</th>
+                  <td>4 Sessions (60 Min)</td>
+                  <td class="redesign-pricing__td--highlight">6 In-Depth Sessions</td>
+                  <td>8 Specialist Sessions</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Main Focus</th>
+                  <td>Early socialization, crate &amp; biting habits</td>
+                  <td class="redesign-pricing__td--highlight">Loose-leash walking, recall &amp; park manners</td>
+                  <td>Individualized behavior plan &amp; reactivity support</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Best Suited For</th>
+                  <td>Puppies under 6 months</td>
+                  <td class="redesign-pricing__td--highlight">Adolescent &amp; adult dogs</td>
+                  <td>Dogs experiencing fear, stress, or reactivity</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Real-World Park Training</th>
+                  <td><span class="redesign-pricing__table-muted">Not specified</span></td>
+                  <td class="redesign-pricing__td--highlight">Included (Park Practice)</td>
+                  <td><span class="redesign-pricing__table-muted">Ask us</span></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="redesign-pricing__row-header">Follow-up Support</th>
+                  <td>Homework guidance &amp; clicker</td>
+                  <td class="redesign-pricing__td--highlight">Alumni clinic access</td>
+                  <td>Direct trainer communication</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Accessible Package Inquiry Dialog Modal -->
+      <dialog class="redesign-pricing__modal" id="pricingInquiryModal" aria-labelledby="pricingModalTitle">
+        <div class="redesign-pricing__modal-box">
+          <button type="button" class="redesign-pricing__modal-close" id="pricingModalCloseBtn" aria-label="Close dialog">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          <div class="redesign-pricing__modal-header">
+            <span class="redesign-pricing__modal-eyebrow" id="pricingModalEyebrow">PACKAGE INQUIRY</span>
+            <h3 class="redesign-pricing__modal-title" id="pricingModalTitle">Discuss Your Training Plan</h3>
+            <p class="redesign-pricing__modal-desc" id="pricingModalDesc">
+              Our certified academy trainers are ready to discuss your goals, schedule private sessions, and ensure this package is the right fit.
+            </p>
+          </div>
+          <div class="redesign-pricing__modal-details" id="pricingModalDetails">
+            <!-- Dynamically populated via JS -->
+          </div>
+          <div class="redesign-pricing__modal-actions">
+            <a href="tel:5550192834" class="redesign-pricing__modal-btn redesign-pricing__modal-btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call Behaviorist: (555) 019-2834</span>
+            </a>
+            <button type="button" class="redesign-pricing__modal-btn redesign-pricing__modal-btn--secondary" id="pricingModalDismissBtn">
+              <span>Back to Packages</span>
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: Client Stories, FAQ Accordion & Free Assessment
+         ========================================================================= -->
+    
+    <!-- BLOCK A: Customer Testimonials (Warm Ivory Surface) -->
+    <section class="s7-testimonials" id="s7-stories" aria-labelledby="s7-stories-title">
+      <div class="s7-container">
+        <div class="s7-testimonials__layout">
+          
+          <!-- Left Editorial Column -->
+          <div class="s7-testimonials__intro">
+            <span class="s7-eyebrow" id="s7-stories-eyebrow">REAL STORIES, REAL PROGRESS</span>
+            <h2 class="s7-heading s7-heading--lg" id="s7-stories-title">
+              Better Behavior. <br><span class="s7-text-accent">Stronger Bonds.</span>
+            </h2>
+            <p class="s7-paragraph">
+              Families across our community have transformed their daily routines and strengthened communication with their dogs through gentle, science-backed positive-reinforcement training.
+            </p>
+
+            <!-- Trust Indicator Badge -->
+            <div class="s7-trust-badge" role="region" aria-label="Customer satisfaction rating">
+              <div class="s7-trust-badge__score">4.9/5</div>
+              <div class="s7-trust-badge__content">
+                <div class="s7-stars" aria-label="5 out of 5 stars rating">
+                  <svg class="s7-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="s7-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="s7-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="s7-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="s7-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="s7-trust-badge__label">Trusted by local dog families</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Testimonials Stack (Staggered Cards) -->
+          <div class="s7-testimonials__stack">
+            
+            <!-- Testimonial 1 -->
+            <article class="s7-card s7-card--stagger-1">
+              <div class="s7-card__stars" aria-hidden="true">
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+              </div>
+              <blockquote class="s7-card__quote">
+                &ldquo;We can finally enjoy walks without constant pulling. The training helped us understand our dog&rsquo;s behavior instead of simply reacting to it.&rdquo;
+              </blockquote>
+              <footer class="s7-card__footer">
+                <div class="s7-avatar" aria-hidden="true">SM</div>
+                <div class="s7-card__author">
+                  <cite class="s7-card__name">Sarah M.</cite>
+                  <span class="s7-card__meta">Labrador Retriever</span>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="s7-card s7-card--stagger-2">
+              <div class="s7-card__stars" aria-hidden="true">
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+              </div>
+              <blockquote class="s7-card__quote">
+                &ldquo;Our dog is calmer around visitors, and we feel much more confident handling difficult situations. The process was practical and supportive.&rdquo;
+              </blockquote>
+              <footer class="s7-card__footer">
+                <div class="s7-avatar" aria-hidden="true">DP</div>
+                <div class="s7-card__author">
+                  <cite class="s7-card__name">Daniel &amp; Priya</cite>
+                  <span class="s7-card__meta">German Shepherd</span>
+                </div>
+              </footer>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="s7-card s7-card--stagger-3">
+              <div class="s7-card__stars" aria-hidden="true">
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+                <span class="s7-star-icon">&#9733;</span>
+              </div>
+              <blockquote class="s7-card__quote">
+                &ldquo;The biggest change was learning how to communicate consistently with our dog. The progress has made everyday life easier for our whole family.&rdquo;
+              </blockquote>
+              <footer class="s7-card__footer">
+                <div class="s7-avatar" aria-hidden="true">MR</div>
+                <div class="s7-card__author">
+                  <cite class="s7-card__name">Michael R.</cite>
+                  <span class="s7-card__meta">Golden Retriever</span>
+                </div>
+              </footer>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK B: Frequently Asked Questions (Soft Sage Surface) -->
+    <section class="s7-faq" id="s7-faq-section" aria-labelledby="s7-faq-title">
+      <div class="s7-container">
+        <div class="s7-faq__layout">
+          
+          <!-- Left Column: Heading & Informational Panel -->
+          <div class="s7-faq__sidebar">
+            <span class="s7-eyebrow" id="s7-faq-eyebrow">HERE TO HELP</span>
+            <h2 class="s7-heading s7-heading--lg" id="s7-faq-title">
+              Questions Before Your First Session?
+            </h2>
+            <p class="s7-paragraph">
+              Clear answers to help you choose the right training approach for your dog and feel completely prepared.
+            </p>
+
+            <!-- Recommendation Callout Panel -->
+            <div class="s7-callout">
+              <div class="s7-callout__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <h3 class="s7-callout__title">Need a Personal Recommendation?</h3>
+              <p class="s7-callout__text">
+                Not sure which curriculum best matches your dog&rsquo;s temperamental profile? Connect directly with our training team for individualized guidance.
+              </p>
+              <a href="#s7-contact-block" class="s7-btn s7-btn--primary" id="s7FaqCtaBtn">
+                <span>Talk to Our Team</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Accessible FAQ Accordion -->
+          <div class="s7-faq__accordion" role="region" aria-label="Frequently Asked Questions Accordion">
+            
+            <!-- Question 1 (Default Open) -->
+            <div class="s7-accordion-item is-expanded" id="s7-faq-item-1">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-1" 
+                  aria-expanded="true" 
+                  aria-controls="s7-faq-panel-1"
+                >
+                  <span class="s7-accordion-item__question">When should I start training my puppy?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-1" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-1"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    You can begin puppy foundation routines as early as 8 weeks old. Early socialization, positive bite inhibition, and crate guidance between 8 and 16 weeks build the confidence puppies need for a lifetime of calm behavior.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="s7-accordion-item" id="s7-faq-item-2">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-2" 
+                  aria-expanded="false" 
+                  aria-controls="s7-faq-panel-2"
+                >
+                  <span class="s7-accordion-item__question">Do you use positive-reinforcement methods?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-2" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-2"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    Yes, exclusively. We practice humane, science-backed positive-reinforcement training. We focus on rewarding wanted behaviors, establishing clear communication, and setting your dog up to succeed without shock collars, choke chains, or intimidation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="s7-accordion-item" id="s7-faq-item-3">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-3" 
+                  aria-expanded="false" 
+                  aria-controls="s7-faq-panel-3"
+                >
+                  <span class="s7-accordion-item__question">Can older dogs learn new behaviors?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-3" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-3"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    Yes! Dogs of any age can learn and thrive. Older companions often benefit tremendously from structured routines, low-impact focus exercises, and positive redirection that respects their physical comfort and cognitive health.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="s7-accordion-item" id="s7-faq-item-4">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-4" 
+                  aria-expanded="false" 
+                  aria-controls="s7-faq-panel-4"
+                >
+                  <span class="s7-accordion-item__question">Can you help with leash pulling and reactivity?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-4" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-4"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    Yes. Leash pulling and barrier frustration are among our core specialties. We teach reliable loose-leash engagement, focus games, and systematic counter-conditioning to help dogs remain relaxed when passing other dogs and outdoor triggers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="s7-accordion-item" id="s7-faq-item-5">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-5" 
+                  aria-expanded="false" 
+                  aria-controls="s7-faq-panel-5"
+                >
+                  <span class="s7-accordion-item__question">How long does a typical training program take?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-5" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-5"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    Program durations vary depending on your goals, typically ranging between 4 to 8 dedicated sessions spread over several weeks. This cadence ensures ample time for habit consolidation, home practice, and real-world proofing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="s7-accordion-item" id="s7-faq-item-6">
+              <h3 class="s7-accordion-item__header">
+                <button 
+                  type="button" 
+                  class="s7-accordion-item__trigger" 
+                  id="s7-faq-trigger-6" 
+                  aria-expanded="false" 
+                  aria-controls="s7-faq-panel-6"
+                >
+                  <span class="s7-accordion-item__question">What happens if my dog needs additional support after training?</span>
+                  <span class="s7-accordion-item__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+              </h3>
+              <div 
+                class="s7-accordion-item__panel" 
+                id="s7-faq-panel-6" 
+                role="region" 
+                aria-labelledby="s7-faq-trigger-6"
+              >
+                <div class="s7-accordion-item__content">
+                  <p>
+                    We provide post-course homework guides, alumni check-in clinics, and direct trainer follow-up options. As your dog grows or encounters new environments, our behavioral specialists remain accessible to answer questions and refine routines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK C: Contact & Free Assessment Form (Warm Ivory Surface) -->
+    <section class="s7-contact" id="s7-contact-block" aria-labelledby="s7-contact-title">
+      <div class="s7-container">
+        <div class="s7-contact__layout">
+          
+          <!-- Left Column: Editorial Contact Panel (Deep Evergreen #173C32) -->
+          <div class="s7-contact__panel">
+            <span class="s7-eyebrow s7-eyebrow--light">LET&rsquo;S GET STARTED</span>
+            <h2 class="s7-contact__heading" id="s7-contact-title">
+              A Happier Life With Your Dog Starts Here.
+            </h2>
+            <p class="s7-contact__desc">
+              Tell us a little about your dog and the challenges you&rsquo;re facing. We&rsquo;ll help you understand the next steps toward calmer, more confident behavior.
+            </p>
+
+            <div class="s7-contact__info">
+              <!-- Phone Link -->
+              <div class="s7-contact__item">
+                <div class="s7-contact__icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="s7-contact__text-group">
+                  <span class="s7-contact__label">Direct Consultation Line</span>
+                  <a href="tel:18005553647" class="s7-contact__link">1-800-555-DOGS (3647)</a>
+                </div>
+              </div>
+
+              <!-- Email Link -->
+              <div class="s7-contact__item">
+                <div class="s7-contact__icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="s7-contact__text-group">
+                  <span class="s7-contact__label">Trainer Inquiries</span>
+                  <a href="mailto:trainer@paw.com" class="s7-contact__link">trainer@paw.com</a>
+                </div>
+              </div>
+
+              <!-- Academy Hours -->
+              <div class="s7-contact__item">
+                <div class="s7-contact__icon-box" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="s7-contact__text-group">
+                  <span class="s7-contact__label">Training Hours</span>
+                  <span class="s7-contact__val">Monday&ndash;Saturday, 8:00 AM&ndash;7:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Value Pledge -->
+            <div class="s7-contact__pledge">
+              <span class="s7-contact__pledge-dot" aria-hidden="true"></span>
+              <p class="s7-contact__pledge-text">Personalized guidance. Practical training. Lasting progress.</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Assessment Form Panel (White #FFFFFF) -->
+          <div class="s7-form-panel">
+            <header class="s7-form-panel__header">
+              <h3 class="s7-form-panel__title">Request Your Free Assessment</h3>
+              <p class="s7-form-panel__subtitle">
+                Share a few details and we&rsquo;ll help identify the right training approach for your dog.
+              </p>
+            </header>
+
+            <!-- Assessment Form -->
+            <form class="s7-form" id="s7AssessmentForm" novalidate>
+              
+              <!-- Success Feedback Box (Initially Hidden) -->
+              <div class="s7-form__feedback is-hidden" id="s7FormFeedback" role="status" aria-live="polite">
+                <div class="s7-feedback-card">
+                  <div class="s7-feedback-card__icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <h4 class="s7-feedback-card__title" id="s7FeedbackTitle">Assessment Request Prepared</h4>
+                  <p class="s7-feedback-card__msg" id="s7FeedbackMsg">
+                    Thank you! Your information has been validated. Our head trainer will review your dog&rsquo;s details and respond within 24 hours.
+                  </p>
+                  <div class="s7-feedback-card__integration-note">
+                    <strong>Front-End Integration Notice:</strong> This interactive form validated all fields on the client side. In production, connect the form handler to your API endpoint (e.g. <code>POST /api/assessment</code>).
+                  </div>
+                  <button type="button" class="s7-btn s7-btn--secondary" id="s7FormResetBtn">
+                    Submit Another Request
+                  </button>
+                </div>
+              </div>
+
+              <!-- Form Fields Container -->
+              <div class="s7-form__fields" id="s7FormFieldsGroup">
+                
+                <!-- Row 1: Your Name & Phone -->
+                <div class="s7-form__row">
+                  <div class="s7-field">
+                    <label for="s7UserName" class="s7-label">Your Name <span class="s7-required" aria-hidden="true">*</span></label>
+                    <input 
+                      type="text" 
+                      id="s7UserName" 
+                      name="userName" 
+                      class="s7-input" 
+                      placeholder="e.g. Eleanor Vance" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="s7-error-msg" id="s7UserNameError" aria-live="polite"></span>
+                  </div>
+
+                  <div class="s7-field">
+                    <label for="s7UserPhone" class="s7-label">Phone Number <span class="s7-required" aria-hidden="true">*</span></label>
+                    <input 
+                      type="tel" 
+                      id="s7UserPhone" 
+                      name="userPhone" 
+                      class="s7-input" 
+                      placeholder="(555) 019-2834" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="s7-error-msg" id="s7UserPhoneError" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <!-- Row 2: Email Address -->
+                <div class="s7-field">
+                  <label for="s7UserEmail" class="s7-label">Email Address <span class="s7-required" aria-hidden="true">*</span></label>
+                  <input 
+                    type="email" 
+                    id="s7UserEmail" 
+                    name="userEmail" 
+                    class="s7-input" 
+                    placeholder="eleanor@example.com" 
+                    required 
+                    aria-required="true"
+                  >
+                  <span class="s7-error-msg" id="s7UserEmailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Row 3: Dog's Name, Breed & Age -->
+                <div class="s7-form__row s7-form__row--three">
+                  <div class="s7-field">
+                    <label for="s7DogName" class="s7-label">Dog&rsquo;s Name <span class="s7-required" aria-hidden="true">*</span></label>
+                    <input 
+                      type="text" 
+                      id="s7DogName" 
+                      name="dogName" 
+                      class="s7-input" 
+                      placeholder="e.g. Buster" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="s7-error-msg" id="s7DogNameError" aria-live="polite"></span>
+                  </div>
+
+                  <div class="s7-field">
+                    <label for="s7DogBreed" class="s7-label">Dog&rsquo;s Breed <span class="s7-optional">(Optional)</span></label>
+                    <input 
+                      type="text" 
+                      id="s7DogBreed" 
+                      name="dogBreed" 
+                      class="s7-input" 
+                      placeholder="e.g. Labrador Mix"
+                    >
+                  </div>
+
+                  <div class="s7-field">
+                    <label for="s7DogAge" class="s7-label">Dog&rsquo;s Age <span class="s7-required" aria-hidden="true">*</span></label>
+                    <input 
+                      type="text" 
+                      id="s7DogAge" 
+                      name="dogAge" 
+                      class="s7-input" 
+                      placeholder="e.g. 7 Months" 
+                      required 
+                      aria-required="true"
+                    >
+                    <span class="s7-error-msg" id="s7DogAgeError" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <!-- Row 4: Interested Training Program -->
+                <div class="s7-field">
+                  <label for="s7ProgramSelect" class="s7-label">Interested Training Program</label>
+                  <div class="s7-select-wrap">
+                    <select id="s7ProgramSelect" name="programSelect" class="s7-select">
+                      <option value="">Select a training program...</option>
+                      <option value="puppy-foundation">Puppy Foundation</option>
+                      <option value="basic-obedience">Basic Obedience</option>
+                      <option value="advanced-obedience">Advanced Obedience</option>
+                      <option value="behavior-reactivity">Behavior and Reactivity</option>
+                      <option value="agility-sports">Agility and Sports</option>
+                      <option value="board-and-train">Board and Train</option>
+                      <option value="not-sure-yet">Not Sure Yet</option>
+                    </select>
+                    <span class="s7-select-arrow" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Row 5: Primary Behavioral Challenge -->
+                <div class="s7-field">
+                  <label for="s7Challenge" class="s7-label">Primary Behavioral Challenge</label>
+                  <textarea 
+                    id="s7Challenge" 
+                    name="behaviorChallenge" 
+                    class="s7-textarea" 
+                    rows="4" 
+                    placeholder="Tell us what you'd like to improve (e.g. pulling on walks, jumping on visitors, barking at dogs)..."
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="s7-form__action">
+                  <button type="submit" class="s7-btn s7-btn--primary s7-btn--submit" id="s7SubmitBtn">
+                    <span>Request My Free Assessment</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Redesigned Layered Footer (.rt-footer)
+       ========================================================================= -->
+  <footer class="rt-footer" id="rt-site-footer">
+    <div class="rt-footer__container">
+      
+      <!-- Top Grid: 4 Columns -->
+      <div class="rt-footer__grid">
+        
+        <!-- Column 1: Brand, Mission & Socials -->
+        <div class="rt-footer__brand-col">
+          <a href="#hero" class="rt-footer__brand" aria-label="PawTrainer Homepage">
+            <img src="assets/images/logo-paw.png" alt="PawTrainer Logo" class="rt-footer__brand-logo">
+            <div class="rt-footer__brand-text">
+              <span class="rt-footer__brand-title">PAWTRAINER</span>
+              <span class="rt-footer__brand-tagline">Dog Behavior &amp; Obedience</span>
+            </div>
+          </a>
+          <p class="rt-footer__desc">
+            Helping dogs and their people build calmer routines, stronger communication, and lasting trust through thoughtful, reward-based training.
+          </p>
+          <div class="rt-footer__pledge-badge">
+            <span class="rt-footer__pledge-dot" aria-hidden="true"></span>
+            <span>Humane, positive-reinforcement coaching</span>
+          </div>
+          <!-- Social Media Links (Clearly identified demonstrative links) -->
+          <div class="rt-footer__socials" role="navigation" aria-label="Social media links">
+            <a href="https://facebook.com" class="rt-footer__social-btn" aria-label="PawTrainer on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://instagram.com" class="rt-footer__social-btn" aria-label="PawTrainer on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://youtube.com" class="rt-footer__social-btn" aria-label="PawTrainer on YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore Navigation -->
+        <div class="rt-footer__nav-col">
+          <h4 class="rt-footer__col-heading">Explore</h4>
+          <ul class="rt-footer__link-list">
+            <li><a href="#hero" class="rt-footer__link">Home</a></li>
+            <li><a href="#philosophy" class="rt-footer__link">Our Academy</a></li>
+            <li><a href="#programs" class="rt-footer__link">Training Programs</a></li>
+            <li><a href="#training" class="rt-footer__link">Courses</a></li>
+            <li><a href="#pricing" class="rt-footer__link">Pricing</a></li>
+            <li><a href="#gallery" class="rt-footer__link">Success Stories</a></li>
+            <li><a href="#s7-contact-block" class="rt-footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Training Programs -->
+        <div class="rt-footer__programs-col">
+          <h4 class="rt-footer__col-heading">Training Programs</h4>
+          <ul class="rt-footer__link-list">
+            <li><a href="#programs" class="rt-footer__link">Puppy Foundations</a></li>
+            <li><a href="#programs" class="rt-footer__link">Everyday Obedience</a></li>
+            <li><a href="#programs" class="rt-footer__link">Behavior &amp; Reactivity</a></li>
+            <li><a href="#training" class="rt-footer__link">Agility &amp; Enrichment</a></li>
+            <li><a href="#training" class="rt-footer__link">Board &amp; Train</a></li>
+            <li><a href="#training" class="rt-footer__link">Advanced Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter & Resources Card -->
+        <div class="rt-footer__newsletter-col">
+          <div class="rt-footer__newsletter-card">
+            <h4 class="rt-footer__newsletter-title">Better Days Start With Better Training</h4>
+            <p class="rt-footer__newsletter-desc">
+              Get practical training tips, simple exercises, and guidance to help your dog thrive at home and outdoors.
+            </p>
+            <form class="rt-footer__form" id="rt-footer-newsletter-form" novalidate>
+              <div class="rt-footer__input-row">
+                <label for="rt-newsletter-email" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Email address for newsletter</label>
+                <input 
+                  type="email" 
+                  id="rt-newsletter-email" 
+                  class="rt-footer__input" 
+                  placeholder="Your email address" 
+                  required
+                >
+                <button type="submit" class="rt-footer__submit-btn" id="rtNewsletterSubmitBtn">
+                  <span>Join</span>
+                </button>
+              </div>
+              <div class="rt-footer__form-status" id="rt-newsletter-status" role="alert" aria-live="polite"></div>
+              <p class="rt-footer__form-note">
+                Respecting your privacy. Front-end demonstration mode.
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="rt-footer__bottom">
+        <div class="rt-footer__copyright">
+          &copy; <span id="rt-current-year">2026</span> PawTrainer. All Rights Reserved.
+        </div>
+        
+        <div class="rt-footer__legal-links">
+          <a href="#s7-contact-block" class="rt-footer__legal-link">Privacy Policy</a>
+          <a href="#s7-contact-block" class="rt-footer__legal-link">Terms of Service</a>
+          <a href="#philosophy" class="rt-footer__legal-link">Canine Welfare Pledge</a>
+        </div>
+
+        <button type="button" class="rt-footer__back-to-top" id="rt-back-to-top" aria-label="Scroll back to top of page">
+          <span>Back to top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Redesign JavaScript Only -->
+  <script src="assets/js/redesign.js"></script>
+
+  <!-- Navigation & Footer Embedded Interactive Controller -->
+  <script id="rt-nav-footer-script">
+    (function rtNavFooterInit() {
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // 1. Dynamic Copyright Year
+        const yearEl = document.getElementById('rt-current-year');
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+
+        // 2. Navbar Scroll Style Trigger
+        const navbar = document.getElementById('rt-site-header');
+        if (navbar) {
+          const handleScroll = () => {
+            if (window.scrollY > 20) {
+              navbar.classList.add('is-scrolled');
+            } else {
+              navbar.classList.remove('is-scrolled');
+            }
+          };
+          window.addEventListener('scroll', handleScroll, { passive: true });
+          handleScroll();
+        }
+
+        // 3. Mobile Menu Toggle & Keyboard Esc
+        const toggleBtn = document.getElementById('rt-mobile-toggle');
+        const mobileDrawer = document.getElementById('rt-mobile-menu');
+        const mobileLinks = document.querySelectorAll('.rt-navbar__mobile-link');
+        const mobileCta = document.querySelector('.rt-navbar__mobile-cta');
+
+        function closeMobileMenu() {
+          if (toggleBtn && mobileDrawer) {
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            mobileDrawer.classList.remove('is-open');
+          }
+        }
+
+        function toggleMobileMenu() {
+          if (toggleBtn && mobileDrawer) {
+            const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+            toggleBtn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+            mobileDrawer.classList.toggle('is-open', !isExpanded);
+          }
+        }
+
+        if (toggleBtn && mobileDrawer) {
+          toggleBtn.addEventListener('click', toggleMobileMenu);
+
+          mobileLinks.forEach((link) => {
+            link.addEventListener('click', closeMobileMenu);
+          });
+
+          if (mobileCta) {
+            mobileCta.addEventListener('click', closeMobileMenu);
+          }
+
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileDrawer.classList.contains('is-open')) {
+              closeMobileMenu();
+              toggleBtn.focus();
+            }
+          });
+        }
+
+        // 4. Smooth Scrolling for Internal Hash Anchors
+        const allInternalAnchors = document.querySelectorAll('a[href^="#"]');
+        allInternalAnchors.forEach((link) => {
+          link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+            if (targetId && targetId !== '#') {
+              const targetEl = document.querySelector(targetId);
+              if (targetEl) {
+                e.preventDefault();
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (window.history.pushState) {
+                  window.history.pushState(null, '', targetId);
+                }
+              }
+            }
+          });
+        });
+
+        // 5. Active Section Navigation Indicator with IntersectionObserver
+        const navLinks = Array.from(document.querySelectorAll('.rt-navbar__link'));
+        const sectionMap = {
+          'hero': 'Home',
+          'philosophy': 'Academy',
+          'programs': 'Programs',
+          'training': 'Course',
+          'pricing': 'Pricing',
+          's7-stories': 'Reviews',
+          's7-contact-block': 'Contact'
+        };
+
+        const sectionElements = Object.keys(sectionMap)
+          .map(id => document.getElementById(id))
+          .filter(Boolean);
+
+        if ('IntersectionObserver' in window && sectionElements.length > 0) {
+          const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -60% 0px',
+            threshold: 0
+          };
+
+          const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const activeId = entry.target.id;
+                navLinks.forEach((link) => {
+                  const href = link.getAttribute('href');
+                  const isActive = (href === '#' + activeId);
+                  link.classList.toggle('is-active', isActive);
+                });
+                // Also sync mobile links
+                mobileLinks.forEach((link) => {
+                  const href = link.getAttribute('href');
+                  const isActive = (href === '#' + activeId);
+                  link.classList.toggle('is-active', isActive);
+                });
+              }
+            });
+          }, observerOptions);
+
+          sectionElements.forEach((el) => sectionObserver.observe(el));
+        }
+
+        // 6. Back-to-Top Button
+        const backToTopBtn = document.getElementById('rt-back-to-top');
+        if (backToTopBtn) {
+          backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+
+        // 7. Footer Newsletter Demonstration Handler
+        const newsletterForm = document.getElementById('rt-footer-newsletter-form');
+        const newsletterInput = document.getElementById('rt-newsletter-email');
+        const newsletterStatus = document.getElementById('rt-newsletter-status');
+
+        if (newsletterForm && newsletterInput && newsletterStatus) {
+          newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const val = newsletterInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!val || !emailRegex.test(val)) {
+              newsletterStatus.className = 'rt-footer__form-status is-visible is-error';
+              newsletterStatus.textContent = 'Please enter a valid email address.';
+              newsletterInput.focus();
+              return;
+            }
+
+            // Demo feedback (no false claim of real external delivery)
+            newsletterStatus.className = 'rt-footer__form-status is-visible is-success';
+            newsletterStatus.textContent = 'Thank you! Front-End Demo: In production, connect this to your email marketing API.';
+            newsletterInput.value = '';
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
