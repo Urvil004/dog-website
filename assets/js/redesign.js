@@ -1281,6 +1281,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize with default selection: Complete K9 Obedience
     updatePackage('complete-obedience', false);
+
+    // ------------------------------------------------------------------------
+    // Comparison Table Mobile Navigation Pills & Scroll Synchronization
+    // ------------------------------------------------------------------------
+    const tableContainer = document.querySelector('.redesign-pricing__table-container');
+    const tablePills = document.querySelectorAll('.redesign-pricing__table-pill');
+    const tableFadeRight = document.querySelector('.redesign-pricing__table-fade-right');
+
+    if (tableContainer && tablePills.length > 0) {
+      function syncTablePillState() {
+        const scrollLeft = tableContainer.scrollLeft;
+        const maxScroll = tableContainer.scrollWidth - tableContainer.clientWidth;
+
+        // Toggle right gradient shadow when near the end of scroll
+        if (tableFadeRight) {
+          tableFadeRight.classList.toggle('is-scrolled-end', scrollLeft >= maxScroll - 12);
+        }
+
+        // Determine active column based on scroll position
+        const puppyCol = document.getElementById('col-puppy');
+        const obedienceCol = document.getElementById('col-obedience');
+        const bootcampCol = document.getElementById('col-bootcamp');
+
+        let activeId = 'col-puppy';
+        if (obedienceCol && bootcampCol) {
+          const stickyOffset = 135;
+          const scrollPos = scrollLeft + stickyOffset + 50;
+
+          if (scrollPos >= bootcampCol.offsetLeft) {
+            activeId = 'col-bootcamp';
+          } else if (scrollPos >= obedienceCol.offsetLeft) {
+            activeId = 'col-obedience';
+          } else {
+            activeId = 'col-puppy';
+          }
+        }
+
+        tablePills.forEach(pill => {
+          const isActive = pill.getAttribute('data-col') === activeId;
+          pill.classList.toggle('is-active', isActive);
+          pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+      }
+
+      tableContainer.addEventListener('scroll', syncTablePillState, { passive: true });
+
+      tablePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const targetId = pill.getAttribute('data-col');
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            const stickyOffset = 135;
+            const targetLeft = targetEl.offsetLeft - stickyOffset;
+            tableContainer.scrollTo({
+              left: Math.max(0, targetLeft),
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Initial check
+      syncTablePillState();
+    }
   }
 
   /* ==========================================================================

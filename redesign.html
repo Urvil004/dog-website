@@ -278,7 +278,9 @@
       }
 
       .rt-navbar__mobile-drawer.is-open {
-        max-height: 520px;
+        max-height: min(520px, calc(100dvh - 80px));
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         opacity: 1;
         visibility: visible;
       }
@@ -318,14 +320,25 @@
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       .rt-navbar__container {
         padding: 0 20px;
-        height: 72px;
+        height: 74px;
       }
 
       .rt-navbar__mobile-drawer {
         padding: 20px 20px 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .rt-navbar__container {
+        padding: 0 16px;
+        height: 70px;
+      }
+
+      .rt-navbar__mobile-drawer {
+        padding: 18px 16px 24px;
       }
 
       .rt-navbar__brand-title {
@@ -334,6 +347,21 @@
 
       .rt-navbar__brand-tagline {
         font-size: 0.625rem;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .rt-navbar__brand-title {
+        font-size: 1.05rem;
+      }
+
+      .rt-navbar__brand-tagline {
+        display: none;
+      }
+
+      .rt-navbar__logo-img {
+        width: 32px;
+        height: 32px;
       }
     }
 
@@ -762,12 +790,29 @@
     }
 
     @media (max-width: 480px) {
+      .rt-footer {
+        padding: 60px 0 32px;
+      }
+
+      .rt-footer__container {
+        padding: 0 16px;
+      }
+
       .rt-footer__input-row {
         flex-direction: column;
       }
 
+      .rt-footer__input {
+        font-size: 16px;
+      }
+
       .rt-footer__submit-btn {
         width: 100%;
+        padding: 13px 20px;
+      }
+
+      .rt-footer__newsletter-card {
+        padding: 24px 20px;
       }
     }
   </style>
@@ -2485,65 +2530,92 @@
             </p>
           </div>
 
-          <div class="redesign-pricing__table-container" tabindex="0" role="region" aria-label="Package comparison table">
-            <table class="redesign-pricing__table">
-              <thead>
-                <tr>
-                  <th scope="col" class="redesign-pricing__th-feature">Package Features</th>
-                  <th scope="col" class="redesign-pricing__th-col" id="col-puppy">
-                    <span class="redesign-pricing__col-name">Puppy Starter</span>
-                    <span class="redesign-pricing__col-price">$349</span>
-                  </th>
-                  <th scope="col" class="redesign-pricing__th-col redesign-pricing__th-col--highlight" id="col-obedience">
-                    <div class="redesign-pricing__col-tag">POPULAR CHOICE</div>
-                    <span class="redesign-pricing__col-name">Complete K9 Obedience</span>
-                    <span class="redesign-pricing__col-price">$599</span>
-                  </th>
-                  <th scope="col" class="redesign-pricing__th-col" id="col-bootcamp">
-                    <span class="redesign-pricing__col-name">Behavioral Bootcamp</span>
-                    <span class="redesign-pricing__col-price">$849</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Course Price</th>
-                  <td>$349</td>
-                  <td class="redesign-pricing__td--highlight">$599</td>
-                  <td>$849</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Private Training Sessions</th>
-                  <td>4 Sessions (60 Min)</td>
-                  <td class="redesign-pricing__td--highlight">6 In-Depth Sessions</td>
-                  <td>8 Specialist Sessions</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Main Focus</th>
-                  <td>Early socialization, crate &amp; biting habits</td>
-                  <td class="redesign-pricing__td--highlight">Loose-leash walking, recall &amp; park manners</td>
-                  <td>Individualized behavior plan &amp; reactivity support</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Best Suited For</th>
-                  <td>Puppies under 6 months</td>
-                  <td class="redesign-pricing__td--highlight">Adolescent &amp; adult dogs</td>
-                  <td>Dogs experiencing fear, stress, or reactivity</td>
-                </tr>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Real-World Park Training</th>
-                  <td><span class="redesign-pricing__table-muted">Not specified</span></td>
-                  <td class="redesign-pricing__td--highlight">Included (Park Practice)</td>
-                  <td><span class="redesign-pricing__table-muted">Ask us</span></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="redesign-pricing__row-header">Follow-up Support</th>
-                  <td>Homework guidance &amp; clicker</td>
-                  <td class="redesign-pricing__td--highlight">Alumni clinic access</td>
-                  <td>Direct trainer communication</td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- Mobile Horizontal Scroll Affordance & Quick Package Switcher -->
+          <div class="redesign-pricing__table-hint">
+            <div class="redesign-pricing__table-hint-badge">
+              <svg class="redesign-pricing__hint-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+              <span>Swipe horizontally to compare all packages</span>
+              <svg class="redesign-pricing__hint-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <div class="redesign-pricing__table-pills" role="tablist" aria-label="Compare training options tabs">
+              <button type="button" class="redesign-pricing__table-pill is-active" data-col="col-puppy" role="tab" aria-selected="true">
+                Puppy Starter ($349)
+              </button>
+              <button type="button" class="redesign-pricing__table-pill" data-col="col-obedience" role="tab" aria-selected="false">
+                Complete K9 ★ ($599)
+              </button>
+              <button type="button" class="redesign-pricing__table-pill" data-col="col-bootcamp" role="tab" aria-selected="false">
+                Bootcamp ($849)
+              </button>
+            </div>
+          </div>
+
+          <div class="redesign-pricing__table-wrapper">
+            <div class="redesign-pricing__table-fade-right" aria-hidden="true"></div>
+            <div class="redesign-pricing__table-container" tabindex="0" role="region" aria-label="Package comparison table">
+              <table class="redesign-pricing__table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="redesign-pricing__th-feature">Package Features</th>
+                    <th scope="col" class="redesign-pricing__th-col" id="col-puppy">
+                      <span class="redesign-pricing__col-name">Puppy Starter</span>
+                      <span class="redesign-pricing__col-price">$349</span>
+                    </th>
+                    <th scope="col" class="redesign-pricing__th-col redesign-pricing__th-col--highlight" id="col-obedience">
+                      <div class="redesign-pricing__col-tag">POPULAR CHOICE</div>
+                      <span class="redesign-pricing__col-name">Complete K9 Obedience</span>
+                      <span class="redesign-pricing__col-price">$599</span>
+                    </th>
+                    <th scope="col" class="redesign-pricing__th-col" id="col-bootcamp">
+                      <span class="redesign-pricing__col-name">Behavioral Bootcamp</span>
+                      <span class="redesign-pricing__col-price">$849</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Course Price</th>
+                    <td>$349</td>
+                    <td class="redesign-pricing__td--highlight">$599</td>
+                    <td>$849</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Private Training Sessions</th>
+                    <td>4 Sessions (60 Min)</td>
+                    <td class="redesign-pricing__td--highlight">6 In-Depth Sessions</td>
+                    <td>8 Specialist Sessions</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Main Focus</th>
+                    <td>Early socialization, crate &amp; biting habits</td>
+                    <td class="redesign-pricing__td--highlight">Loose-leash walking, recall &amp; park manners</td>
+                    <td>Individualized behavior plan &amp; reactivity support</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Best Suited For</th>
+                    <td>Puppies under 6 months</td>
+                    <td class="redesign-pricing__td--highlight">Adolescent &amp; adult dogs</td>
+                    <td>Dogs experiencing fear, stress, or reactivity</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Real-World Park Training</th>
+                    <td><span class="redesign-pricing__table-muted">Not specified</span></td>
+                    <td class="redesign-pricing__td--highlight">Included (Park Practice)</td>
+                    <td><span class="redesign-pricing__table-muted">Ask us</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="redesign-pricing__row-header">Follow-up Support</th>
+                    <td>Homework guidance &amp; clicker</td>
+                    <td class="redesign-pricing__td--highlight">Alumni clinic access</td>
+                    <td>Direct trainer communication</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
