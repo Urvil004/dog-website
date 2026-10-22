@@ -61,6 +61,27 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroSection) {
     heroSection.addEventListener('mouseenter', stopSlideTimer);
     heroSection.addEventListener('mouseleave', startSlideTimer);
+
+    // Touch swipe support on mobile physical devices
+    let touchStartX = 0;
+    let touchEndX = 0;
+    heroSection.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    heroSection.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const swipeDiff = touchEndX - touchStartX;
+      if (Math.abs(swipeDiff) > 40) {
+        if (swipeDiff < 0) {
+          showSlide(currentSlide + 1);
+        } else {
+          showSlide(currentSlide - 1);
+        }
+        startSlideTimer();
+      }
+    }, { passive: true });
+
     startSlideTimer();
   }
 
@@ -117,23 +138,74 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // 3. Mobile Navigation Menu Toggle
+  // 3. Mobile Navigation Menu Toggle & Backdrop
   // =========================================================================
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navMenu = document.querySelector('.nav-menu');
+  const navBackdrop = document.querySelector('.nav-backdrop');
+
+  function openMobileNav() {
+    if (!navMenu || !mobileToggle) return;
+    navMenu.classList.add('open');
+    mobileToggle.classList.add('active');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    if (navBackdrop) navBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileNav() {
+    if (!navMenu || !mobileToggle) return;
+    navMenu.classList.remove('open');
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    if (navBackdrop) navBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      const isExpanded = navMenu.classList.contains('open');
-      mobileToggle.setAttribute('aria-expanded', isExpanded);
+      const isOpen = navMenu.classList.contains('open');
+      if (isOpen) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
     });
 
     // Close menu when clicking nav link
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
+        closeMobileNav();
       });
+    });
+
+    // Close menu when clicking backdrop overlay
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => {
+        closeMobileNav();
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMobileNav();
+      }
+    });
+
+    // Auto-close if resized to desktop viewport
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+        closeMobileNav();
+      }
+    });
+  }
+
+  // Close mobile nav when clicking the drawer modal CTA button
+  const navDrawerBookBtn = document.getElementById('nav-drawer-book-btn');
+  if (navDrawerBookBtn) {
+    navDrawerBookBtn.addEventListener('click', () => {
+      closeMobileNav();
     });
   }
 
